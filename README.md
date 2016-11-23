@@ -8,5 +8,7 @@ Events will occur monthly, iteratively improving to meet the needs of the commun
 ## Agenda
 
 8am-9am _Arrival/Networking_
+
 9am-9:20am _Speaker Presentation_
+
 9:20am-10am _Additional Networking_

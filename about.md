@@ -4,7 +4,7 @@ navigation_title: About
 title: About Data + Donuts
 permalink: /about/
 
-cover: '../images/data-donuts-pinkongray.png'
+cover: 'images/data-donuts-pinkongray.png'
 ---
 
 <p>Data + Donuts is a morning speaker series and networking event that brings together the makers and doers that are changing local government from the ground up by harnessing technology and data to drive meaningful change.  It is a joint, collaborative effort between the County of Los Angeles, the City of Los Angeles, and the local L.A. civic technology community.</p>

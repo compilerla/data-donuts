@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+{% if page.cover %}
+  <div class="blog-cover" style="background-image:url({{page.cover}});">
+{% else %}
+  <div class="blog-cover" style="background-image:url({{site.baseurl}}/images/data-donuts-pinkongray.png
+);">
+{% endif %}
+  </div>
+  {% if page.cover_credit %}
+    <span class="blog-cover-credit">Credit: {{page.cover_credit}}</span>
+  {% endif %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

@@ -11,6 +11,10 @@ layout: default
     <h2 class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</h2>
   </header>
 
+  {% if organiser.photo %}
+    <div class="author" style="background-image:url({{organiser.photo}});"></div>
+  {% endif %}
+  
   <div class="post-content" itemprop="articleBody">
     <h1>Location</h1>
     <p>

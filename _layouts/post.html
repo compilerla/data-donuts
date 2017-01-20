@@ -21,6 +21,8 @@ layout: default
   {% endif %}
   
   <div class="post-content" itemprop="articleBody">
+    <a class="page-link button button-primary button-in-page" href="{{ site.baseurl }}/rsvp/">RSVP</a>
+    
     <div>
       {{ content }}
     </div>
@@ -33,12 +35,18 @@ layout: default
       </p>
       {{location.gmap}}
     </div>
+    
+    <a class="page-link button button-primary button-in-page" href="{{ site.baseurl }}/rsvp/">RSVP</a>
   </div>
 
+
+
+<!--
     {% if organiser.email %}
         <div>
             <a href='mailto:{{organiser.email}}?subject=Register interest for {{page.title}} on {{ page.date | date: "%B %-d, %Y" }}&body=Hi! Im interested in your event. Can I come please?' class="button button-primary">Register Interest</a>
         </div>
     {% endif %}
+-->
 
 </article>

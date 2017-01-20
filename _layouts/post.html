@@ -15,6 +15,10 @@ layout: default
     <h3 class="post-time">From {{ page.start_time}} to {{page.end_time }}</h3>
   </header>
 
+  {% if organiser.photo %}
+    <div class="author" style="background-image:url({{organiser.photo}});"></div>
+  {% endif %}
+  
   <div class="post-content" itemprop="articleBody">
     <h1>Location</h1>
     <p>

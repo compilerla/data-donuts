@@ -608,3 +608,7 @@ footer {
   text-decoration: none; }
   .button.button-primary:hover {
     background: #ab82b8; }
+
+.button-in-page {
+  margin: 10px 0px;
+  display: inline-block; }

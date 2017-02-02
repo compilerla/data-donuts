@@ -5,7 +5,7 @@ layout: default
 
 <div class="home">
     
-    {% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
+    {% capture currentDate %}{{'now' | date: '%s' | minus: 68400}}{% endcapture %}
 
     <div class="clearfix">
 
@@ -15,7 +15,7 @@ layout: default
 
         {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
         {% assign location = site.data.locations.[post.location] %}
-        
+
         {% if blogDate >= currentDate %}
       
           <a href="{{ post.url | prepend: site.baseurl }}">

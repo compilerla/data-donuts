@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RSVP
-navigation_title: RSVP
+# navigation_title: RSVP
 permalink: /rsvp/
 button: true
 

@@ -13,7 +13,7 @@ layout: default
         <h3 class="post-organisers-name">Featuring {{organiser.name}}</h3>
     {% endif %}
     <h2 class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</h2>
-    <h3 class="post-time">From {{ page.start_time}} to {{page.end_time }}</h3>
+    <h3 class="post-time">From {{ page.start_time }} to {{ page.end_time }}</h3>
   </header>
 
   {% if organiser.photo %}
@@ -21,7 +21,7 @@ layout: default
   {% endif %}
   
   <div class="post-content" itemprop="articleBody">
-    <a class="page-link button button-primary button-in-page" href="{{ site.baseurl }}/rsvp/">RSVP</a>
+    <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
     
     <div>
       {{ content }}
@@ -36,7 +36,14 @@ layout: default
       {{location.gmap}}
     </div>
     
-    <a class="page-link button button-primary button-in-page" href="{{ site.baseurl }}/rsvp/">RSVP</a>
+    <h1 id="rsvp">RSVP</h1>
+    
+    <div style="width:100%; text-align:left;">
+      <iframe src="{{ page.eventbrite }}" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+      <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" >
+          <a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
+      </div>
+    </div>
   </div>
 
 

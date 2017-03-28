@@ -1,0 +1,33 @@
+---
+layout: post
+
+#event information
+title:  "Data + Donuts @ General Assembly (DTLA)"
+date:   2017-04-19 08:00+0800
+start_time: "8:00am"
+end_time: "10:00am"
+
+location: GA-DTLA
+cover: /images/GADTLA.jpg
+
+#event organiser aka speaker details
+organiser: "Wendy Hsu"
+eventbrite: ""
+---
+
+# Speaker
+__Wendy Hsu__, _Digital Strategist/Senior Project Coordinator, City of Los Angeles Department of Cultural Affairs_
+
+{% include icon-twitter.html username="wendyfhsu" %}
+
+Wendy Hsu is a researcher, strategist, and educator who engages with hybrid research and organizing agendas for equality in arts, technology, and civic participation. A former ACLS Public Fellow, Hsu currently works as the digital strategist of the City of Los Angeles Department of Cultural Affairs, providing research and strategy to redesign the department’s data and knowledge architecture. They are also the founder of Lab at DCA, a city staff innovation incubator. Hsu has served on the advisory committee for Arts for LA, Center for Cultural Innovation, California Community Foundation’s Social Change Data Commons, Cultural Research Network, and the Society of Ethnomusicology Council. They also lead two community-driven arts collectives LA Listens and Movable Parts. Since 2007, Hsu has taught at University of Virginia, Occidental College, and Art Center College of Design.
+
+# Agenda
+
+8am - Doors Open/Networking
+
+9am - Speaker Presentation
+
+9:20am - Additional Networking
+
+10am - Doors Close

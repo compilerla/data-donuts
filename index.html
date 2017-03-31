@@ -41,13 +41,13 @@ layout: default
         {% if blogDate >= currentDate %}
       
           <a href="{{ post.url | prepend: site.baseurl }}">
-            {% if location.image %}
+          {% if location.image %}
             <div class="event-square" style="background-image:url({{location.image}});">
-            {% else if post.cover %}
+          {% else if post.cover %}
             <div class="event-square" style="background-image:url({{post.cover}});">
-            {% else %}
+          {% else %}
             <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
-            {% endif %}
+          {% endif %}
               <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
                <div class='event-square-overlay'></div>
             </div>

@@ -1,14 +1,14 @@
 Ted Ross:
-    name: Ted Ross
+    name: "Ted Ross"
     email:
     photo: "https://pbs.twimg.com/profile_images/593166048641163264/LVbtIEHi_400x400.jpg"
 
 Jeramy Gray:
-    name: Jeramy Gray
+    name: "Jeramy Gray"
     email:
     photo: "https://pbs.twimg.com/profile_images/476043913061343232/G9BLFgh7_400x400.jpeg"
 
 Wendy Hsu:
-    name: Wendy Hsu
+    name: "Wendy Hsu"
     email:
-    photo: "/images/wendyhsu.jpg"
+    photo: "../images/wendyhsu.jpg"

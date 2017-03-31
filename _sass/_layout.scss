@@ -317,7 +317,7 @@
   margin-top: 5px;
 }
 
-.event-sqaure{
+.event-square{
   color:white;
   border: 1px solid #372121;
   position: relative;
@@ -387,7 +387,7 @@
 }
 
 @include media-query($on-laptop) {
-  .event-sqaure {
+  .event-square {
     margin-right:10px;
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width:         calc(50% - (#{$spacing-unit} / 2));
@@ -395,7 +395,7 @@
 }
 
 @include media-query($on-palm) {
-  .event-sqaure {
+  .event-square {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));

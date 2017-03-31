@@ -5,7 +5,7 @@ layout: default
 
 <div class="home">
     
-    <!-- Begin MailChimp Signup Form -->
+<!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 #mc_embed_signup{background:#fff; clear:left; font:14px; width:100%;}
@@ -24,13 +24,13 @@ layout: default
 </form>
 <br />
 </div>
-
-<!--End mc_embed_signup-->
+<!--End MailChimpSignup Form-->
     
     {% capture currentDate %}{{'now' | date: '%s' | minus: 68400}}{% endcapture %}
 
     <div class="clearfix">
 
+<!-- List Upcoming Events -->
       <h1 class="event-time-heading fix-top">Upcoming {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
 
       {% for post in site.posts reversed %}
@@ -41,13 +41,13 @@ layout: default
         {% if blogDate >= currentDate %}
       
           <a href="{{ post.url | prepend: site.baseurl }}">
-            {% if post.cover %}
-            <div class="event-sqaure" style="background-image:url({{post.cover}});">
-            {% else if location.image %}
-            <div class="event-sqaure" style="background-image:url({{location.image}});">
-            {% else %}
-            <div class="event-sqaure" style="background-image:url(http://evento.io/img/cover.jpg);">
-            {% endif %}
+          {% if location.image %}
+            <div class="event-square" style="background-image:url({{location.image}});">
+          {% else if post.cover %}
+            <div class="event-square" style="background-image:url({{post.cover}});">
+          {% else %}
+            <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
+          {% endif %}
               <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
                <div class='event-square-overlay'></div>
             </div>
@@ -60,6 +60,7 @@ layout: default
     </div>
     <div class="clearfix">
 
+<!-- List Past Events -->
       <h1 class="event-time-heading">Past {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
       {% for post in site.posts %}
 
@@ -69,9 +70,9 @@ layout: default
 
           <a href="{{ post.url | prepend: site.baseurl }}">
             {% if post.cover %}
-            <div class="event-sqaure" style="background-image:url({{post.cover}});">
+            <div class="event-square" style="background-image:url({{post.cover}});">
             {% else %}
-            <div class="event-sqaure" style="background-image:url(http://app-beacon.com/wp-content/uploads/2015/05/events.jpg);">
+            <div class="event-square" style="background-image:url(http://app-beacon.com/wp-content/uploads/2015/05/events.jpg);">
             {% endif %}
               <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
               <div class='event-square-overlay'></div>

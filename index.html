@@ -5,7 +5,7 @@ layout: default
 
 <div class="home">
     
-    <!-- Begin MailChimp Signup Form -->
+<!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 #mc_embed_signup{background:#fff; clear:left; font:14px; width:100%;}
@@ -24,13 +24,13 @@ layout: default
 </form>
 <br />
 </div>
-
-<!--End mc_embed_signup-->
+<!--End MailChimpSignup Form-->
     
     {% capture currentDate %}{{'now' | date: '%s' | minus: 68400}}{% endcapture %}
 
     <div class="clearfix">
 
+<!-- List Upcoming Events -->
       <h1 class="event-time-heading fix-top">Upcoming {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
 
       {% for post in site.posts reversed %}
@@ -60,6 +60,7 @@ layout: default
     </div>
     <div class="clearfix">
 
+<!-- List Past Events -->
       <h1 class="event-time-heading">Past {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
       {% for post in site.posts %}
 

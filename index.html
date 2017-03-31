@@ -41,12 +41,12 @@ layout: default
         {% if blogDate >= currentDate %}
       
           <a href="{{ post.url | prepend: site.baseurl }}">
-            {% if post.cover %}
-            <div class="event-sqaure" style="background-image:url({{post.cover}});">
-            {% else if location.image %}
-            <div class="event-sqaure" style="background-image:url({{location.image}});">
+            {% if location.image %}
+            <div class="event-square" style="background-image:url({{location.image}});">
+            {% else if post.cover %}
+            <div class="event-square" style="background-image:url({{post.cover}});">
             {% else %}
-            <div class="event-sqaure" style="background-image:url(http://evento.io/img/cover.jpg);">
+            <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
             {% endif %}
               <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
                <div class='event-square-overlay'></div>
@@ -70,9 +70,9 @@ layout: default
 
           <a href="{{ post.url | prepend: site.baseurl }}">
             {% if post.cover %}
-            <div class="event-sqaure" style="background-image:url({{post.cover}});">
+            <div class="event-square" style="background-image:url({{post.cover}});">
             {% else %}
-            <div class="event-sqaure" style="background-image:url(http://app-beacon.com/wp-content/uploads/2015/05/events.jpg);">
+            <div class="event-square" style="background-image:url(http://app-beacon.com/wp-content/uploads/2015/05/events.jpg);">
             {% endif %}
               <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
               <div class='event-square-overlay'></div>

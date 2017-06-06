@@ -9,3 +9,9 @@ GA-DTLA:
     image: "images/GADTLA.jpg"
     address: "360 E. 2nd Street, Suite 400<br>Los Angeles, CA 90012"
     gmap: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.858169127631!2d-118.24136538909397!3d34.04750912736049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6380fcd7b2d%3A0x8dd8fe27484fc189!2s360+E+2nd+St+%23400%2C+Los+Angeles%2C+CA+90012!5e0!3m2!1sen!2sus!4v1490726135868" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+CCF:
+    name: California Community Foundation
+    image: "images/thepark.jpg"
+    address: "Joan Palevsky Center<br>281 S. Figueroa St., Suite 100<br>Los Angeles, CA 90012"
+    gmap: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5440.087861287134!2d-118.25768853395716!3d34.05603330494551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7ad66c4fbd1%3A0x9064bd2463f74de6!2s281+S+Figueroa+St+%23100%2C+Los+Angeles%2C+CA+90012!5e0!3m2!1sen!2sus!4v1494302611521" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>

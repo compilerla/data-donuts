@@ -12,3 +12,9 @@ Events will occur monthly, iteratively improving to meet the needs of the commun
 9am-9:20am _Speaker Presentation_
 
 9:20am-10am _Additional Networking_
+
+## Friends!
+
+Copy our idea and start a Data & Donuts in your city, like our friends at Open Charlotte:
+
+[Open Charlotte - Data and Donuts](http://opencharlotte.org/dataanddonuts)

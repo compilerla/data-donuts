@@ -33,7 +33,6 @@ Robert Mitchell V:
     email:
     photo: "../images/robert-mitchell.jpg"
 
-
 Mark Greninger:
     name: "Mark Greninger"
     email:
@@ -43,3 +42,8 @@ George Khalil:
     name: "George Khalil"
     email:
     photo: "../images/george-khalil.jpg"
+
+Matthew Agustin:
+    name: "Matthew Agustin"
+    email: 
+    photo: "../images/matthew_agustin.jpg"

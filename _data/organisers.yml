@@ -1,49 +1,41 @@
 Ted Ross:
     name: "Ted Ross"
-    email:
     photo: "https://pbs.twimg.com/profile_images/593166048641163264/LVbtIEHi_400x400.jpg"
 
 Jeramy Gray:
     name: "Jeramy Gray"
-    email:
     photo: "https://pbs.twimg.com/profile_images/476043913061343232/G9BLFgh7_400x400.jpeg"
 
 Wendy Hsu:
     name: "Wendy Hsu"
-    email:
     photo: "../images/wendyhsu.jpg"
 
 Wendy Harn:
     name: "Wendy Harn"
-    email:
     photo: "../images/wendyharn.jpg"
 
 Matt Petersen:
     name: "Matt Petersen"
-    email:
     photo: "../images/matt_petersen.jpg"
 
 Helen Campbell:
     name: "Helen Campbell"
-    email:
     photo: "../images/helen_campbell.jpg"
 
 Robert Mitchell V:
     name: "Robert Mitchell V"
-    email:
     photo: "../images/robert-mitchell.jpg"
 
 Mark Greninger:
     name: "Mark Greninger"
-    email:
     photo: "../images/mark_greninger.jpg"
 
 George Khalil:
     name: "George Khalil"
-    email:
     photo: "../images/george-khalil.jpg"
 
 Matthew Agustin:
     name: "Matthew Agustin"
-    email: 
     photo: "../images/matthew_agustin.jpg"
+    title: "Research Associate"
+    org: "LA County Arts Commission"

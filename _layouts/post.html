@@ -24,9 +24,25 @@ layout: default
     <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
     
     <div>
+      <h1>Speaker</h1>
+       <p>
+        <strong>{{ organiser.name }}</strong><br />
+        {{ organiser.title }}, {{organiser.org}}
+      </p>
+    </div>
+    <div>
       {{ content }}
     </div>
-    
+    <div>
+      <h1>Agenda</h1>
+      <ul>
+        <li>8am - Doors Open/Networking</li>
+        <li>9am - Speaker Presentation</li>
+        <li>9:20am - Additional Networking</li>
+        <li>10am - Doors Close</li>
+      </ul>
+    </div>
+
     <div>
       <h1>Location</h1>
       <p>
@@ -53,22 +69,11 @@ layout: default
     {% endif %}
     
     {% if page.slides != '' %}
-    <h1 id="slides">Slides</h1>
-    <div style="width:100%; text-align:left;">
-      <iframe src="https://{{ page.slides }}" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    </div>
+      <h1 id="slides">Slides</h1>
+      <div style="width:100%; text-align:left;">
+        <iframe src="https://{{ page.slides }}" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
     {% else %}
     {% endif %}
   </div>
-
-
-
-<!--
-    {% if organiser.email %}
-        <div>
-            <a href='mailto:{{organiser.email}}?subject=Register interest for {{page.title}} on {{ page.date | date: "%B %-d, %Y" }}&body=Hi! Im interested in your event. Can I come please?' class="button button-primary">Register Interest</a>
-        </div>
-    {% endif %}
--->
-
 </article>

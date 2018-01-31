@@ -10,15 +10,11 @@ permalink: /about/
 
 <p>Our speakers and networking sessions will delve into the latest topics in technology: Big Data, Platform as a Service, DevOps, Open Data, Analytics and Visualization, Community Engagement, Civic Technology and more.</p>
 
-<p>Doors Open @ 8am<br />
-Speaker Begins @ 9am<br /> 
-Doors Close @ 10am</p>
-
 <h1>Past Speakers</h1>
 <ul>
 {% for item in site.data.organisers %}
   <li>
-      {{ item[0]] }}
+      {{ item[0] }}
   </li>
 {% endfor %}
 </ul>

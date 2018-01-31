@@ -21,14 +21,21 @@ Matt Petersen:
 Helen Campbell:
     name: "Helen Campbell"
     photo: "../images/helen_campbell.jpg"
+    title: "City Planning Associate"
+    org: "City of Los Angeles"
 
 Robert Mitchell V:
     name: "Robert Mitchell V"
     photo: "../images/robert-mitchell.jpg"
+    title: "Data Analyst"
+    org: "Skid Row Housing Trust"
+    twitter: "robertmitchellv"
 
 Mark Greninger:
     name: "Mark Greninger"
     photo: "../images/mark_greninger.jpg"
+    title: "Chief Data Officer"
+    org: "County of Los Angeles"
 
 George Khalil:
     name: "George Khalil"
@@ -39,3 +46,4 @@ Matthew Agustin:
     photo: "../images/matthew_agustin.jpg"
     title: "Research Associate"
     org: "LA County Arts Commission"
+    twitter: "_matthewagustin"

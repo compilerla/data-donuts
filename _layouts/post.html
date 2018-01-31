@@ -26,8 +26,14 @@ layout: default
     <div>
       <h1>Speaker</h1>
        <p>
-        <strong>{{ organiser.name }}</strong><br />
+        <strong>{{ organiser.name }}</strong>
+        <br />
         {{ organiser.title }}, {{organiser.org}}
+        <br>
+        {% if organiser.twitter %}
+          {% include icon-twitter.html username=organiser.twitter %}
+        {% else %}
+        {% endif %}
       </p>
     </div>
     <div>
@@ -55,7 +61,7 @@ layout: default
     <br />
     <h1 id="rsvp">RSVP</h1>
     
-    {% if page.eventbrite != '' and page.slides != '' %}
+    {% if page.eventbrite != '' %}
     <div style="width:100%; text-align:left;">
       <iframe src="{{ page.eventbrite }}" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
       <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" >

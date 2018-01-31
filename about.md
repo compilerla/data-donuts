@@ -14,4 +14,15 @@ permalink: /about/
 Speaker Begins @ 9am<br /> 
 Doors Close @ 10am</p>
 
+<h1>Past Speakers</h1>>
+<ul>
+{% for member in site.data.organisers %}
+  <li>
+<!--     <a href="https://github.com/{{ member.github }}">
+ -->      {{ organiser.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
 <p></p>

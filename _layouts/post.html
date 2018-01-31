@@ -51,6 +51,14 @@ layout: default
     <em>RSVPs open two weeks before the event so check back soon.</em>
     
     {% endif %}
+    
+    {% if page.slides != '' %}
+    <h1 id="rsvp">Slides</h1>
+    <div style="width:100%; text-align:left;">
+      <iframe src="https://{{ page.slides }}" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+    {% else %}
+    {% endif %}
   </div>
 
 

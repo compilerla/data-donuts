@@ -13,6 +13,11 @@ Events will occur monthly, iteratively improving to meet the needs of the commun
 
 9:20am-10am _Additional Networking_
 
+## Resources
+
+Print cute name tags with the Data + Donuts logo using our [PDF template](https://github.com/compilerla/data-donuts/tree/master/assets). Print onto Avery 42395 sticker badges, [Avery Template 5395 online](https://www.avery.com/templates/5395).
+![Name tag preview image](https://github.com/compilerla/data-donuts/blob/master/assets/nametag-preview.png)
+
 ## Friends!
 
 Copy our idea and start a Data & Donuts in your city, like our friends at Open Charlotte:

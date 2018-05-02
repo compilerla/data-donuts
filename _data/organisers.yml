@@ -71,3 +71,9 @@ Kimberly Clark:
     photo: "../images/kimberly-clark.jpg"
     title: "Urban Planner"
     org: "Southern California Association of Governments"
+
+Nina Kin:
+    name: "Nina Kin"
+    photo: "../images/nina-kin.jpeg"
+    title: "Systems Analyst"
+    org: "County of Los Angeles"

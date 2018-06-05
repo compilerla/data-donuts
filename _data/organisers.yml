@@ -77,3 +77,15 @@ Nina Kin:
     photo: "../images/nina-kin.jpeg"
     title: "Systems Analyst"
     org: "County of Los Angeles"
+
+Erin Coleman:
+    name: "Erin Coleman"
+    photo: "../images/erin-coleman.jpg"
+    title: "City Planner"
+    org: "City of Los Angeles"
+
+Erick Lopez:
+    name: "Erick Lopez"
+    photo: "../images/erick-lopez.jpg"
+    title: "City Planner"
+    org: "City of Los Angeles"

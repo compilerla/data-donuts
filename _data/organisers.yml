@@ -89,3 +89,10 @@ Erick Lopez:
     photo: "../images/erick-lopez.jpg"
     title: "City Planner"
     org: "City of Los Angeles"
+
+Lauren Steely:
+    name: "Lauren Steely"
+    photo: "../images/lauren-steely.jpg"
+    title: "Data Scientist"
+    org: "Water Resource Management Group, MWD"
+    twitter: "MadreDeZanjas"

@@ -15,7 +15,7 @@ layout: default
 <div id="mc_embed_signup">
 <form action="//compiler.us14.list-manage.com/subscribe/post?u=83dad32003c2669592d5c0b95&amp;id=4c248b74cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-<label for="mce-EMAIL">Join the change-makers and do-ers that are transforming government from the inside out - subscribe to hear about future events!</label>
+<label for="mce-EMAIL">Subscribe to hear about future events!</label>
 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_83dad32003c2669592d5c0b95_4c248b74cc" tabindex="-1" value=""></div>
@@ -44,7 +44,7 @@ layout: default
           {% if location.image %}
             <div class="event-square" style="background-image:url({{location.image}});">
           {% else if post.cover %}
-            <div class="event-square" style="background-image:url({{post.cover}});">
+            <div class="event-square" style="background-image:url({{post.coverm}});">
           {% else %}
             <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
           {% endif %}
@@ -69,15 +69,9 @@ layout: default
         {% if blogDate < currentDate %}
 
           <a href="{{ post.url | prepend: site.baseurl }}">
-            {% if post.cover %}
-            <div class="event-square" style="background-image:url({{post.cover}});">
-            {% else %}
-            <div class="event-square" style="background-image:url(http://app-beacon.com/wp-content/uploads/2015/05/events.jpg);">
-            {% endif %}
-              <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
-              <div class='event-square-overlay'></div>
-            </div>
-            
+             <div>
+              <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/ {{post.organiser}}</h2>
+             </div>           
           </a>
 
         {% endif %}

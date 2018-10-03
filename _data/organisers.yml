@@ -102,3 +102,10 @@ Jon Neill:
     photo: "../images/jon-neill.jpeg"
     title: "Chief Systems Analyst, Internal Services Department"
     org: "County of Los Angeles"
+
+Hunter Owens:
+    name: "Hunter Owens"
+    photo: "../images/hunter-owens.jpg"
+    title: "Head of Data Science, Information Technology Agency"
+    org: "City of Los Angeles"
+    twitter: "hunter_owens"

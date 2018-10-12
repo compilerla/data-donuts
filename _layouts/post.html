@@ -5,6 +5,7 @@ layout: default
 {% assign location = site.data.locations[page.location] %}
 {% assign organiser = site.data.organisers[page.organiser] %}
 
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -39,6 +40,9 @@ layout: default
     <div>
       {{ content }}
     </div>
+
+    {% if today > page.date %}
+
     <div>
       <h1>Agenda</h1>
       <ul>
@@ -57,8 +61,6 @@ layout: default
       </p>
       {{location.gmap}}
     </div>
-    
-    <br />
     <h1 id="rsvp">RSVP</h1>
     
     {% if page.eventbrite != '' %}
@@ -73,6 +75,14 @@ layout: default
     <em>RSVPs open two weeks before the event so check back soon.</em>
     
     {% endif %}
+    
+    {% else %}
+    {% endif %}
+
+
+    <!-- <br /> -->
+
+
 
     <!-- If there are slides, display them -->
     {% if page.slides != '' %}

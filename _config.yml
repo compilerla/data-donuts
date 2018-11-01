@@ -7,12 +7,18 @@
 
 # Site settings
 title: Data + Donuts LA
+description: > # this means to ignore newlines until "baseurl:"
+    Changing local government from the ground up.
+email: "data-donuts@compiler.la"
+address: ""
+twitter: datadonutsla
+github: "compilerla/data-donuts"
+youtube: "youtube.com/channel/UC_mAa07EdkkGCn48lq0yj3Q"
 
 #What is the name of the events or talks you would like to host? (Example Brownbags, Talks, Lighting Talks)
 event_label: Events
 
-description: > # this means to ignore newlines until "baseurl:"
-    Changing local government from the ground up.
+
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://datadonuts.la" # the base hostname & protocol for your site
@@ -24,4 +30,3 @@ markdown: kramdown
 future: true
 
 permalink: /event/:title.html
-

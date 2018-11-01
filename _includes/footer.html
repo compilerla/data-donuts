@@ -1,13 +1,12 @@
 <footer class="site-footer">
-
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    {% include logos.html %}
+    <br /><br />
     <p>
-      {{ site.description }}<br /><br />
-      {% include logos.html %}
+      {{ site.title }} is organized with ❤. Find us on   
+      <a href="https://twitter.com/{{ site.twitter}}">Twitter</a> | 
+      <a href="https://github.com/{{ site.github }}">GitHub</a> | 
+      <a href="https://www.youtube.com/channel/UC_mAa07EdkkGCn48lq0yj3Q">YouTube</a>    
     </p>
-
   </div>
-
 </footer>

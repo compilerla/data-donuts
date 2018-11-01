@@ -12,9 +12,9 @@ permalink: /about/
 
 <h1>Past Speakers</h1>
 <ul>
-{% for item in site.data.organisers %}
+{% for speaker in site.data.organisers %}
   <li>
-      {{ item[0] }}
+      <strong>{{ speaker[0] }}</strong>, {{ speaker[1].title }}, {{ speaker[1].org }}
   </li>
 {% endfor %}
 </ul>

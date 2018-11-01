@@ -1,22 +1,35 @@
 Ted Ross:
     name: "Ted Ross"
+    title: "General Manager & CIO, Information Technology Agency"
+    org: "City of Los Angeles"
     photo: "https://pbs.twimg.com/profile_images/593166048641163264/LVbtIEHi_400x400.jpg"
+    twitter: "TedRossLA"
 
 Jeramy Gray:
     name: "Jeramy Gray"
+    title: "Assistant Executive Officer – L.A. County Board of Supervisors, Executive Office"
+    org: "Los Angeles County"
     photo: "https://pbs.twimg.com/profile_images/476043913061343232/G9BLFgh7_400x400.jpeg"
+    twitter: "GrayJeramy"
 
-Wendy Hsu:
-    name: "Wendy Hsu"
+Umi Hsu:
+    name: "Umi Hsu"
+    title: "Digital Strategist/Senior Project Coordinator, City of Los Angeles Department of Cultural Affairs"
+    org: "City of Los Angeles"
     photo: "../images/wendyhsu.jpg"
 
 Wendy Harn:
     name: "Wendy Harn"
+    title: "Chief Data Officer, Sheriff"
+    org: "County of Los Angeles"
     photo: "../images/wendyharn.jpg"
 
 Matt Petersen:
     name: "Matt Petersen"
+    title: "Chief Sustainability Officer, Office of Mayor Eric Garcetti"
+    org: "City of Los Angeles"
     photo: "../images/matt_petersen.jpg"
+    twitter: "mattspete"
 
 Helen Campbell:
     name: "Helen Campbell"
@@ -39,6 +52,8 @@ Mark Greninger:
 
 George Khalil:
     name: "George Khalil"
+    title: "Chief Information Security Officer (CISO)"
+    org: "City of Riverside"
     photo: "../images/george-khalil.jpg"
 
 Matthew Agustin:
@@ -109,3 +124,17 @@ Hunter Owens:
     title: "Senior Data Scientist, Information Technology Agency"
     org: "City of Los Angeles"
     twitter: "hunter_owens"
+
+Marcel Porras:
+    name: "Marcel Porras"
+    photo: "../images/marcel-porras.jpeg"
+    title: "Director Shared Mobility Group, DOT"
+    org: "City of Los Angeles"
+    twitter: "xxmarcelxx"
+
+Kegan Maher:
+    name: "Kegan Maher"
+    photo: "../images/kegan-maher.jpeg"
+    title: "Data Officer"
+    org: "City of Santa Monica"
+    twitter: "iamthekaveman"

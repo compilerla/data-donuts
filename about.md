@@ -10,6 +10,11 @@ permalink: /about/
 
 <p>Our speakers and networking sessions will delve into the latest topics in technology: Big Data, Platform as a Service, DevOps, Open Data, Analytics and Visualization, Community Engagement, Civic Technology and more.</p>
 
+<img src="{{site.baseurl}}/images/digital-summit-award.jpg">
+<caption><em>Data + Donuts organizers recieving 2018 Digital Government Summit Award</em></caption>
+
+<br />
+
 <h1>Past Speakers</h1>
 <ul>
 {% for speaker in site.data.organisers %}

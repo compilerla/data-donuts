@@ -153,6 +153,18 @@ Mohammed Al Rawi:
     org: "County of Los Angeles"
     twitter: "MoAlRawi"
 
+Son Htet:
+    name: "Son Htet"
+    photo: "../images/Son-Htet.jpg"
+    title: "Management Assistant, FireStatLA Section, Los Angeles Fire Department"
+    org: "City of Los Angeles"
+
+Anthony Guerrero:
+    name: "Anthony Guerrero"
+    photo: "../images/Anthony-Guerrero.jpg"
+    title: "Management Assistant, FireStat Section, Los Angeles Fire Department"
+    org: "City of Los Angeles"
+
 Bronwyn Mauldin:
     name: "Bronwyn Mauldin"
     photo: "../images/Bronwyn-Mauldin.jpg"

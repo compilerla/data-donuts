@@ -198,3 +198,11 @@ Alex Alben:
     photo: "../images/Alex-Alben.jpg"
     title: "Privacy Expert, Former Chief Privacy Officer"
     org: "State of Washington"
+
+Juan Vasquez:
+    name: "Juan Vasquez"
+    photo: "../images/juan-vasquez.jpg"
+    title: "Data Programs Manager, Office of Finance"
+    org: "City of Los Angeles"
+    twitter: "juansvas"
+    linkedin: "https://www.linkedin.com/in/juansvas/"

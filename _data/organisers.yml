@@ -206,3 +206,18 @@ Juan Vasquez:
     org: "City of Los Angeles"
     twitter: "juansvas"
     linkedin: "https://www.linkedin.com/in/juansvas/"
+
+Marisa Laderach:
+    name: "Marisa Laderach"
+    photo: "../images/marisa-laderach.jpg"
+    title: "Data Programs Manager, Office of Finance"
+    org: "Southern California Association of Governments (SCAG)"
+    linkedin: "https://www.linkedin.com/in/marisa-laderach/"
+
+Bobby Kobara:
+    name: "Bobby Kobara"
+    photo: "../images/bobby-kobara.jpg"
+    title: "Project Coordinator, Census 2020 Initiative, Office of Mayor Eric Garcetti"
+    org: "City of Los Angeles"
+    twitter: "bobbykobara"
+    linkedin: "https://www.linkedin.com/in/bobbykobara1994/"

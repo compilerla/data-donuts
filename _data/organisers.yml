@@ -229,3 +229,17 @@ Austin Jude Stanion:
     org: "City of Los Angeles"
     twitter: "JudeStanion"
     linkedin: "https://www.linkedin.com/in/austin-jude-stanion/"
+
+Tiffany Chu:
+    name: "Tiffany Chu"
+    photo: "../images/tiffany-chu.jpg"
+    title: "Data Analyst, Information Technology Agency"
+    org: "City of Los Angeles"
+    linkedin: "https://www.linkedin.com/in/tiffanychu90/"
+
+Ian Rose:
+    name: "Ian-Rose"
+    photo: "../images/ian-rose.png"
+    title: "Data Analytics Programmer, Information Technology Agency"
+    org: "City of Los Angeles"
+    github: "ian-r-rose"

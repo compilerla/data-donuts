@@ -243,3 +243,10 @@ Ian Rose:
     title: "Data Analytics Programmer, Information Technology Agency"
     org: "City of Los Angeles"
     github: "ian-r-rose"
+
+Jonathan Bentley:
+    name: "Jonathan Bentley"
+    photo: "../images/jonathan-bentley.jpg"
+    title: "Systems Analyst, LA Sanitation, Department of Public Works"
+    org: "City of Los Angeles"
+    linkedin: "https://www.linkedin.com/in/jonathan-bentley-51b26311/"

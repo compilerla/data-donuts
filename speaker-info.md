@@ -42,7 +42,7 @@ Where is the event located? Is parking available?
 Is the building ADA Accessible?
 + Yes. The presentation area has a podium, if a table or chair is needed for your laptop please notify us. 
 
-<img src="{{site.baseurl}}/images/laci-speaker-venue.jpg">
+<img src="{{site.baseurl}}/images/laci-speaker-venue.JPG">
 <caption><em>Small amphitheater in the middle of building, podium with laptop, A/V setup</em></caption>
 
 

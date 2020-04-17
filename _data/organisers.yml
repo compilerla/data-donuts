@@ -251,10 +251,17 @@ Jonathan Bentley:
     org: "City of Los Angeles"
     linkedin: "https://www.linkedin.com/in/jonathan-bentley-51b26311/"
 
-
 Chris Pailma:
     name: "Chris Pailma"
     photo: "../images/chris-pailma.jpg"
     title: "Section Manager, Information Technology, Internal Services Department"
     org: "County of Los Angeles"
     linkedin: "https://www.linkedin.com/in/christopher-pailma-a7117a98/"
+
+Vyki Englert:
+    name: "Vyki Englert"
+    photo: "../images/vyki-englert.jpg"
+    title: "Principal"
+    org: "Compiler LA"
+    twitter: "vyki_e"
+    linkedin: "https://www.linkedin.com/in/vykienglert"

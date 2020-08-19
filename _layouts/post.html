@@ -3,40 +3,42 @@ layout: default
 ---
 
 {% assign location = site.data.locations[page.location] %}
-{% assign organiser = site.data.organisers[page.organiser] %}
-
+{% assign speaker-list = page.speakers %}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    {% if organiser.photo %}
-        <h3 class="post-organisers-name">Featuring {{organiser.name}}</h3>
-    {% endif %}
     <h2 class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %B %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</h2>
     <h3 class="post-time">From {{ page.start_time }} to {{ page.end_time }}</h3>
   </header>
 
-  {% if organiser.photo %}
-    <div class="author" style="background-image:url({{organiser.photo}});"></div>
-  {% endif %}
   
   <div class="post-content" itemprop="articleBody">
     <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
+
+    <div class="flex-container">
+    {% for item in speaker-list %}
+      {% assign speaker = site.data.speakers[item] %}
     
-    <div>
-      <h1>Speaker</h1>
-       <p>
-        <strong>{{ organiser.name }}</strong>
+      <div class="speaker-info">
+        {% if speaker.photo %}
+          <div class="speaker-photo" style="background-image:url({{speaker.photo}});"></div>
+        {% endif %}
+        <span style="font-size: larger; font-weight: bold;">{{ speaker.name }}</span>
         <br />
-        {{ organiser.title }}, {{organiser.org}}
+        <span style="font-size: smaller;">{{ speaker.title }},<br>{{speaker.org}}</span>
         <br>
-        {% if organiser.twitter %}
-          {% include icon-twitter.html username=organiser.twitter %}
+        {% if speaker.twitter %}
+          {% include icon-twitter.html username=speaker.twitter %}
         {% else %}
         {% endif %}
-      </p>
+      </div>
+    
+    {% endfor %}
     </div>
+    
+    
     <div>
       {{ content }}
     </div>
@@ -46,10 +48,9 @@ layout: default
     <div>
       <h1>Agenda</h1>
       <ul>
-        <li>8am - Doors Open/Networking</li>
-        <li>9am - Speaker Presentation</li>
-        <li>9:20am - Additional Networking</li>
-        <li>10am - Doors Close</li>
+        <li>8:30am - Networking</li>
+        <li>9am - Speaker Presentations</li>
+        <li>10am - End</li>
       </ul>
     </div>
 

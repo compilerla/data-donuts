@@ -214,7 +214,7 @@
     font-size: 24px;
 }
 
-.post-organisers-name{
+.post-speakers-name{
   color:grey;
 }
 
@@ -234,7 +234,7 @@
   line-height: 18px;
 }
 
-.post-time, .post-organisers-name{
+.post-time, .post-speakers-name{
   margin: 0;
   color:#A6A6A6;
 }
@@ -422,3 +422,35 @@
 }
 
 
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.speaker-info {
+  width: 160px;
+  margin: 20px;
+}
+
+.speaker-photo {
+  height: 160px;
+  width: 160px;
+  border-radius: 6px;
+  background-size: cover;
+  box-shadow: 1px 1px 2px 1px #C4C4C4;
+
+  @include media-query($on-laptop){
+    height: 140px;
+    width: 140px;
+  }
+
+  @include media-query($on-palm){
+    height: 100px;
+    width: 100px;
+    top:0px;
+  }
+}

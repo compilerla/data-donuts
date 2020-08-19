@@ -17,7 +17,7 @@ permalink: /about/
 
 <h1>Past Speakers</h1>
 <ul>
-{% for speaker in site.data.organisers %}
+{% for speaker in site.data.speakers %}
   <li>
       <strong>{{ speaker[0] }}</strong>, {{ speaker[1].title }}, {{ speaker[1].org }}
   </li>

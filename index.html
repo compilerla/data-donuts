@@ -53,7 +53,7 @@ layout: default
           {% if location.image %}
             <div class="event-square" style="background-image:url({{location.image}});">
           {% else if post.cover %}
-            <div class="event-square" style="background-image:url({{post.coverm}});">
+            <div class="event-square" style="background-image:url({{post.cover}});">
           {% else %}
             <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
           {% endif %}
@@ -79,7 +79,12 @@ layout: default
 
           <a href="{{ post.url | prepend: site.baseurl }}">
              <div>
-              <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/ {{post.organiser}}</h2>
+              <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/ 
+              {% assign n = post.speakers.size %}
+              {% assign n-commas = n | minus: 1 %}
+              {% for counter in (0..n) %}
+                {{ post.speakers[counter] }}{% if counter < n-commas %}, {% endif %}
+              {% endfor %}</h2>
              </div>           
           </a>
 

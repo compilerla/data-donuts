@@ -2,14 +2,14 @@ Ted Ross:
     name: "Ted Ross"
     title: "General Manager & CIO, Information Technology Agency"
     org: "City of Los Angeles"
-    photo: "https://pbs.twimg.com/profile_images/593166048641163264/LVbtIEHi_400x400.jpg"
+    photo: "../images/ted-ross.jpg"
     twitter: "TedRossLA"
 
 Jeramy Gray:
     name: "Jeramy Gray"
     title: "Assistant Executive Officer – L.A. County Board of Supervisors, Executive Office"
     org: "Los Angeles County"
-    photo: "https://pbs.twimg.com/profile_images/476043913061343232/G9BLFgh7_400x400.jpeg"
+    photo: "../images/jeramy-gray.jpg"
     twitter: "GrayJeramy"
 
 Umi Hsu:
@@ -18,11 +18,17 @@ Umi Hsu:
     org: "City of Los Angeles"
     photo: "../images/wendyhsu.jpg"
 
-Wendy Harn:
-    name: "Wendy Harn"
-    title: "Chief Data Officer, Sheriff"
+# Wendy Harn:
+#     name: "Wendy Harn"
+#     title: "Chief Data Officer, Sheriff"
+#     org: "County of Los Angeles"
+#     photo: "../images/wendyharn.jpg"
+    
+VSAP:
+    name: "Voting Systems Assessment Project Team"
+    title: ""
     org: "County of Los Angeles"
-    photo: "../images/wendyharn.jpg"
+    photo: "../images/vsap.png"
 
 Matt Petersen:
     name: "Matt Petersen"
@@ -71,7 +77,7 @@ Karina Macias:
 
 Jeanne Holm:
     name: "Jeanne Holm"
-    photo: "../images/karina-macias.png"
+    photo: "../images/jeanne-holm.jpeg"
     title: "Deputy CIO and Senior Technology Advisor to the Mayor"
     org: "City of Los Angeles"
 
@@ -144,7 +150,6 @@ Javier Aguilar:
     photo: "../images/Javier-Aguilar.png"
     title: "Senior Regional Planner, Research and Analysis Department"
     org: "Southern California Association of Governments"
-
 
 Mohammed Al Rawi:
     name: "Mohammed Al Rawi"

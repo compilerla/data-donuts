@@ -300,3 +300,15 @@ Lauren Deaderick:
     photo: "../images/lauren-deaderick.jpg"
     title: "Senior Manager on the Customer Experience Strategy and Insights Team"
     org: "LA Metro"
+
+Natalie Amberg:
+    name: "Natalie Amberg"
+    photo: "../images/Natalie-amberg.png"
+    title: "Research Data Analyst"
+    org: "Caltrans"
+
+Katrina M. Kaiser:
+    name: "Katrina M. Kaiser"
+    photo: "../images/katrina-kaiser.jpg"
+    title: "Senior Research Data Specialist"
+    org: "Caltrans" 

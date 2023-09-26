@@ -1,0 +1,25 @@
+ci:
+  autofix_commit_msg: "chore(pre-commit): autofix run"
+  autoupdate_commit_msg: "chore(pre-commit): autoupdate hooks"
+
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+
+repos:
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.4.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+      - id: end-of-file-fixer
+      - id: requirements-txt-fixer
+      - id: check-yaml
+        args: ["--unsafe"]
+      - id: check-added-large-files

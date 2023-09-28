@@ -311,4 +311,10 @@ Katrina M. Kaiser:
     name: "Katrina M. Kaiser"
     photo: "../images/katrina-kaiser.jpg"
     title: "Senior Research Data Specialist"
-    org: "Caltrans" 
+    org: "Caltrans"
+
+Eric Dasmalchi:
+    name: "Eric Dasmalchi"
+    photo: "../images/eric-dasmalchi.png"
+    title: "Research Data Analyst"
+    org: "Caltrans"  

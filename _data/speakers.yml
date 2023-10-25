@@ -317,4 +317,10 @@ Eric Dasmalchi:
     name: "Eric Dasmalchi"
     photo: "../images/eric-dasmalchi.jpg"
     title: "Research Data Analyst"
-    org: "Caltrans"  
+    org: "Caltrans"
+
+Nolan Borgman:
+    name: "Nolan Borgman"
+    photo: "../images/nolan-borgman.png"
+    title: "Planning Supervisor"
+    org: "Southern California Association of Governments (SCAG)"  

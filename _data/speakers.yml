@@ -335,4 +335,10 @@ Kate Holmquist:
     name: "Kate Holmquist"
     photo: "../images/kate-holmquist.jpg"
     title: "Planner, Planning & Development"
-    org: "County of Los Angeles, Department of Parks and Recreation"  
+    org: "County of Los Angeles, Department of Parks and Recreation"
+
+Raynell Cooper:
+    name: "Raynell Cooper"
+    photo: "../images/raynell-cooper.jpg"
+    title: "Residential Parking Policy Manager"
+    org: "San Francisco Municipal Transportation Agency (SFMTA)" 

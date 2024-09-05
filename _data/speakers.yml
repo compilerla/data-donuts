@@ -347,4 +347,10 @@ Joe Nicchitta:
     name: "Joe Nicchitta"
     photo: "../images/joe-nicchitta.jpg"
     title: "Chief Deputy CEO"
-    org: "County of Los Angeles" 
+    org: "County of Los Angeles"
+
+Robert Reny:
+    name: "Robert Reny"
+    photo: "../images/robert-reny.jpg"
+    title: "Associate Resource Specialist"
+    org: "Metropolitan Water District of Southern California (MWD)" 

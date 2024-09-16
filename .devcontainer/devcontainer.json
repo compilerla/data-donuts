@@ -1,6 +1,6 @@
 {
   "name": "compiler/datadonuts.la",
-  "dockerComposeFile": "compose.yml",
+  "dockerComposeFile": "../compose.yml",
   "service": "site",
   "workspaceFolder": "/home/compiler/site",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],

@@ -1,8 +1,8 @@
 services:
   site:
     build:
-      context: ..
+      context: .
       dockerfile: .devcontainer/Dockerfile
     command: sleep infinity
     volumes:
-      - ..:/home/compiler/site
+      - .:/home/compiler/site

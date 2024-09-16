@@ -1,0 +1,66 @@
+name: Generate QR code
+on:
+  workflow_dispatch:
+    inputs:
+      data:
+        description: "The data for the QR code, e.g. a URL"
+        required: true
+        type: string
+      color:
+        description: "The color of the QR code (hex or name), defaults to black"
+        default: "#000000"
+        required: false
+        type: string
+      background:
+        description: "The background color of the QR code in hex format, defaults to transparent"
+        default: "transparent"
+        required: false
+        type: string
+      size:
+        description: "The size of the QR code from 1 (smallest) to 10 (largest), defaults to 4"
+        default: 4
+        required: false
+        type: choice
+        options:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+
+jobs:
+  generate-qr-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: "pyproject.toml"
+
+      - name: Install dependencies
+        run: pip install -e .[qr_codes]
+
+      - name: Generate QR code
+        run: |
+          python qr_codes/main.py \
+            --color="${{ inputs.color }}" \
+            --background="${{ inputs.background }}" \
+            --size="${{ inputs.size }}" \
+            ${{ inputs.data }} \
+            qr-code.png
+
+      - name: Upload QR code as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: qr-code.png
+          path: qr-code.png

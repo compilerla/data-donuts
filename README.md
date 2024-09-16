@@ -1,5 +1,9 @@
 # Data + Donuts
 
+[`datadonuts.la`](https://datadonuts.la)
+
+Deployed via [![Netlify Status](https://api.netlify.com/api/v1/badges/8575d097-6b51-4d47-8ed1-2465cef03933/deploy-status)](https://app.netlify.com/sites/data-donuts/deploys)
+
 ## Purpose
 
 Data + Donuts is a public sector breakfast series that brings together City and County employees, inspiring them by sharing stories of data and tech projects in a positive and supportive environment.

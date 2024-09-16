@@ -1,6 +1,6 @@
 {
   "name": "compiler/datadonuts.la",
-  "dockerComposeFile": "compose.yml",
+  "dockerComposeFile": "../compose.yml",
   "service": "site",
   "workspaceFolder": "/home/compiler/site",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
@@ -18,6 +18,9 @@
         "eamodio.gitlens",
         "esbenp.prettier-vscode",
         "mhutchie.git-graph",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
         "redhat.vscode-xml",
         "sissel.shopify-liquid",
         "tamasfe.even-better-toml"

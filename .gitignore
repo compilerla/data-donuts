@@ -3,3 +3,5 @@
 .idea/
 _site/
 .DS_Store
+qr_codes/*.png
+!qr_codes/datadonuts.la.png

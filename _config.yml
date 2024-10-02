@@ -7,5 +7,6 @@ future: true
 github: "compilerla/data-donuts"
 permalink: /event/:title.html
 source: ./src
+timezone: America/Los_Angeles
 url: "https://datadonuts.la"
 youtube: "youtube.com/channel/UC_mAa07EdkkGCn48lq0yj3Q"

@@ -8,7 +8,7 @@ layout: default
   <div style="text-align: center;">
     <img src="{{site.baseurl}}/images/schoolofdata-logo.png" />
     <br>It's finally here! We're hosting a 2-day training conference on Jan 31-Feb 1 in Downtown LA. Tracks include: Analysts, Systems, Managers/Electeds.  Connect with your peers in government to learn about tools, policy, and more!
-    
+
     <br><br><a href="https://schoolofdata.la" style="display: inline-block; background: #aaa; border-radius: 10px; padding: 20px 30px; color: #fff;"><strong>Apply for School of Data 2019!</strong></a>
     <hr style="margin-top: 40px;">
   </div>
@@ -39,7 +39,7 @@ layout: default
         {% assign location = site.data.locations[post.location] %}
 
         {% if blogDate >= currentDate %}
-      
+
           <a href="{{ post.url | prepend: site.baseurl }}">
           {% if location.image %}
             <div class="event-square" style="background-image:url({{location.image}});">
@@ -51,7 +51,7 @@ layout: default
               <h2>{{ post.title }} <span>{{ post.date | date: "%A, %b %-d, %Y" }}</span></h2>
                <div class='event-square-overlay'></div>
             </div>
-           
+
           </a>
 
         {% endif %}
@@ -70,19 +70,19 @@ layout: default
 
           <a href="{{ post.url | prepend: site.baseurl }}">
              <div>
-              <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/ 
+              <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/
               {% assign n = post.speakers.size %}
               {% assign n-commas = n | minus: 1 %}
               {% for counter in (0..n) %}
                 {{ post.speakers[counter] }}{% if counter < n-commas %}, {% endif %}
               {% endfor %}</h2>
-             </div>           
+             </div>
           </a>
 
         {% endif %}
 
       {% endfor %}
-      
+
     </div>
 
 </div>

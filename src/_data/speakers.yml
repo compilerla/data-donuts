@@ -23,7 +23,7 @@ Umi Hsu:
 #     title: "Chief Data Officer, Sheriff"
 #     org: "County of Los Angeles"
 #     photo: "../images/wendyharn.jpg"
-    
+
 VSAP:
     name: "Voting Systems Assessment Project Team"
     title: ""
@@ -282,7 +282,7 @@ Lorianne Esturas:
     photo: "../images/lorianne-esturas.jpeg"
     title: "Assistant Regional Planner"
     org: "Southern California Association of Governments (SCAG)"
-    
+
 India Brookover:
     name: "India Brookover"
     photo: "../images/india-brookover.jpeg"
@@ -323,13 +323,13 @@ Nolan Borgman:
     name: "Nolan Borgman"
     photo: "../images/nolan-borgman.png"
     title: "Planning Supervisor"
-    org: "Southern California Association of Governments (SCAG)"  
+    org: "Southern California Association of Governments (SCAG)"
 
 Michael Kohlman:
     name: "Michael Kohlman"
     photo: "../images/michael-kohlman.jpg"
     title: "Chief Information Officer"
-    org: "Monterey-Salinas Transit"  
+    org: "Monterey-Salinas Transit"
 
 Kate Holmquist:
     name: "Kate Holmquist"
@@ -341,7 +341,7 @@ Raynell Cooper:
     name: "Raynell Cooper"
     photo: "../images/raynell-cooper.jpg"
     title: "Residential Parking Policy Manager"
-    org: "San Francisco Municipal Transportation Agency (SFMTA)" 
+    org: "San Francisco Municipal Transportation Agency (SFMTA)"
 
 Joe Nicchitta:
     name: "Joe Nicchitta"
@@ -353,4 +353,4 @@ Robert Reny:
     name: "Robert Reny"
     photo: "../images/robert-reny.jpg"
     title: "Associate Resource Specialist"
-    org: "Metropolitan Water District of Southern California (MWD)" 
+    org: "Metropolitan Water District of Southern California (MWD)"

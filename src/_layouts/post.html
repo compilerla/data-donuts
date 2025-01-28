@@ -13,14 +13,14 @@ layout: default
     <h3 class="post-time">From {{ page.start_time }} to {{ page.end_time }}</h3>
   </header>
 
-  
+
   <div class="post-content" itemprop="articleBody">
     <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
 
     <div class="flex-container">
     {% for item in speaker-list %}
       {% assign speaker = site.data.speakers[item] %}
-    
+
       <div class="speaker-info">
         {% if speaker.photo %}
           <div class="speaker-photo" style="background-image:url({{speaker.photo}});"></div>
@@ -34,11 +34,11 @@ layout: default
         {% else %}
         {% endif %}
       </div>
-    
+
     {% endfor %}
     </div>
-    
-    
+
+
     <div>
       {{ content }}
     </div>
@@ -64,7 +64,7 @@ layout: default
       {{location.gmap}}
     </div>
     <h1 id="rsvp">RSVP</h1>
-    
+
     {% if page.eventbrite != '' %}
     <div style="width:100%; text-align:left;">
       <iframe src="{{ page.eventbrite }}" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
@@ -73,11 +73,11 @@ layout: default
       </div>
     </div>
     {% else %}
-    
+
     <em>RSVPs open two weeks before the event so check back soon.</em>
-    
+
     {% endif %}
-    
+
 
 
 

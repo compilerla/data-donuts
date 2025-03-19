@@ -67,10 +67,23 @@ layout: default
 
     {% if page.eventbrite != '' %}
     <div style="width:100%; text-align:left;">
-      <iframe src="{{ page.eventbrite }}" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-      <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" >
-          <a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
-      </div>
+      {% assign eventbrite = page.eventbrite | replace: "https://eventbrite.com/tickets-external?eid=", "" | replace: "&ref=etckt", "" %}
+      <div id="eventbrite-widget-container"></div>
+      <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+      <script type="text/javascript">
+          var orderComplete = function() {
+              window.reload();
+          };
+          window.EBWidgets.createWidget({
+              // Required
+              widgetType: 'checkout',
+              eventId: '{{ eventbrite }}',
+              iframeContainerId: 'eventbrite-widget-container',
+              // Optional
+              iframeContainerHeight: 500,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+              onOrderComplete: orderComplete  // Method called when an order has successfully completed
+          });
+      </script>
     </div>
     {% else %}
 

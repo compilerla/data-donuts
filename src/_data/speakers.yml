@@ -366,3 +366,9 @@ Barbara Andres:
   photo: "../images/barbara-andres.jpg"
   title: "Customer Experience & Innovation Administrator"
   org: "City of Santa Monica Department of Transportation"
+
+Eric Plosky:
+  name: "Eric Plosky"
+  photo: "../images/eric-plosky.jpg"
+  title: "Executive Director"
+  org: "MobilityData"

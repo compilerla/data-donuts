@@ -387,12 +387,12 @@ Greg Fair:
 
 Jason Thompson:
   name: "Jason Thompson"
-  photo: ""
+  photo: "../images/jason-thompson.jpeg"
   title: "Principal Data Analyst"
   org: "LA Metro"
 
 Boris Suchkov:
   name: "Boris Suchkov"
-  photo: ""
+  photo: "../images/boris-suchkov.jpg"
   title: "Senior Manager, Data Analytics & Intelligence"
   org: "LA Metro"

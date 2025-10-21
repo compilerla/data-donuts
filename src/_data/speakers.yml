@@ -396,3 +396,9 @@ Boris Suchkov:
   photo: "../images/boris-suchkov.jpg"
   title: "Senior Manager, Data Analytics & Intelligence"
   org: "LA Metro"
+
+Zackary Campos:
+  name: "Zackary Campos"
+  photo: "../images/zackary-campos.jpeg"
+  title: "Transportation Planner"
+  org: "Los Angeles Department of Transportation (LADOT)"

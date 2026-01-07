@@ -402,3 +402,15 @@ Zackary Campos:
   photo: "../images/zackary-campos.jpeg"
   title: "Transportation Planner"
   org: "Los Angeles Department of Transportation (LADOT)"
+
+Edwin Rodarte:
+  name: "Edwin Rodarte"
+  photo: "../images/edwin-rodarte.jpg"
+  title: "Senior Librarian"
+  org: "Los Angeles Public Library (LAPL)"
+
+Andy Vuong:
+  name: "Andy Vuong"
+  photo: "../images/andy-vuong.jpg"
+  title: "Data Analyst"
+  org: "Los Angeles Public Library (LAPL)"

@@ -414,3 +414,15 @@ Andy Vuong:
   photo: "../images/andy-vuong.jpg"
   title: "Data Analyst"
   org: "Los Angeles Public Library (LAPL)"
+
+Sabrina Davis:
+  name: "Sabrina Davis"
+  photo: "../images/sabrina-davis.jpg"
+  title: "Director of Customer Experience"
+  org: "Metrolink"
+
+Cody Kraatz:
+  name: "Cody Kraatz"
+  photo: "../images/cody-kraatz.jpg"
+  title: "Founder and CEO"
+  org: "SimplifyTransit"

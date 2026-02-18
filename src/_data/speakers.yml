@@ -426,3 +426,9 @@ Cody Kraatz:
   photo: "../images/cody-kraatz.jpg"
   title: "Founder and CEO"
   org: "SimplifyTransit"
+
+Dr. David Blekhman:
+  name: "Dr. David Blekhman"
+  photo: "../images/david-blekhman.jpg"
+  title: "Professor of Sustainable Energy and Transportation"
+  org: "Cal State LA"

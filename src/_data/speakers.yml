@@ -432,3 +432,15 @@ Dr. David Blekhman:
   photo: "../images/david-blekhman.jpg"
   title: "Professor of Sustainable Energy and Transportation"
   org: "Cal State LA"
+
+Jillian Gallard:
+  name: "Jillian Gallard"
+  photo: "../images/jillian-gallard.jpg"
+  title: "Transportation Planner"
+  org: "City of Los Angeles Department of Transportation (LADOT)"
+
+Nataly Rios:
+  name: "Nataly Rios"
+  photo: "../images/nataly-rios.jpg"
+  title: "Transportation Planner"
+  org: "City of Los Angeles Department of Transportation (LADOT)"

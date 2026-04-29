@@ -62,5 +62,5 @@ jobs:
       - name: Upload QR code as artifact
         uses: actions/upload-artifact@v7
         with:
-          name: qr-code.png
           path: qr-code.png
+          archive: false

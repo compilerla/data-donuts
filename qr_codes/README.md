@@ -15,7 +15,7 @@
 1. Click the green `Run workflow` button
 1. Refresh the page to see the in-progress workflow run
 1. When the workflow has completed (look for the green check mark), click the run
-1. In the bottom pane under `Artifacts`, find a link to download the QR code image (downloads a ZIP file with the image inside)
+1. In the bottom pane under `Artifacts`, find a link to download the QR code image
 
 ## Run locally
 

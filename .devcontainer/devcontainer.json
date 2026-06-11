@@ -3,6 +3,9 @@
   "dockerComposeFile": "../compose.yml",
   "service": "site",
   "workspaceFolder": "/home/compiler/site",
+  "remoteEnv": {
+    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/home/compiler/site"
+  },
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
     "vscode": {

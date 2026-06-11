@@ -22,8 +22,16 @@ COPY Gemfile Gemfile
 COPY Gemfile.lock Gemfile.lock
 RUN /bin/bash -l -c 'rvm install $(cat .ruby-version | tr -d "\n") && gem install bundler && bundle install'
 
+# Install mise (to manage Node.js) https://mise.jdx.dev/mise-cookbook/docker.html#docker-image-with-mise
+ENV MISE_DATA_DIR="/home/$USER/mise"
+ENV MISE_CONFIG_DIR="/home/$USER/mise"
+ENV MISE_CACHE_DIR="/home/$USER/mise/cache"
+ENV MISE_INSTALL_PATH="/usr/local/bin/mise"
+
+RUN curl https://mise.run | sh
+
 USER $USER
-ENV PATH "$PATH:/home/$USER/.local/bin"
+ENV PATH="$PATH:/home/$USER/.local/bin:/home/$USER/mise/shims"
 
 COPY LICENSE pyproject.toml README.md ./
 RUN python -m pip install --upgrade pip

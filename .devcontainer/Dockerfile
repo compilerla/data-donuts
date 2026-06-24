@@ -37,7 +37,6 @@ RUN git config --global --add safe.directory $WORK_DIR
 # Install Node.js and npm dependencies
 COPY mise.toml .node-version package.json package-lock.json ./
 RUN mise exec -- npm install -g npm@latest && mise exec -- npm clean-install
-ENV PATH="$PATH:/home/$USER/.local/bin:$MISE_DIR/shims"
 
 COPY LICENSE pyproject.toml README.md ./
 RUN python -m pip install --upgrade pip

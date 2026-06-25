@@ -31,7 +31,7 @@ layout: default
 
         {% if blogDate >= currentDate %}
 
-          <a href="{{ post.url | prepend: site.baseurl }}">
+          <a href="{{ post.url }}">
           {% if location.image %}
             <div class="event-square" style="background-image:url({{location.image}});">
           {% elsif post.cover %}
@@ -59,7 +59,7 @@ layout: default
 
         {% if blogDate < currentDate %}
 
-          <a href="{{ post.url | prepend: site.baseurl }}">
+          <a href="{{ post.url }}">
              <div>
               <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/
               {% assign n = post.speakers.size %}

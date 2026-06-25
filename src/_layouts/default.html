@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  {% include "head.html" %}
 
   <body>
 
-    {% include header.html %}
+    {% include "header.html" %}
 
 {% if page.cover %}
   <div class="blog-cover" style="background-image:url({{page.cover}});">
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    {% include footer.html %}
+    {% include "footer.html" %}
 
   </body>
 </html>

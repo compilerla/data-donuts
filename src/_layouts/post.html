@@ -5,11 +5,25 @@ layout: default
 {% assign location = site.data.locations[page.location] %}
 {% assign speaker-list = page.speakers %}
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article
+  class="post"
+  itemscope
+  itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <h2 class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %B %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</h2>
+    <h2 class="post-date">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+      {% if page.author %}
+        •
+        <span
+          itemprop="author"
+          itemscope
+          itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ page.author }}</span>
+        </span>
+      {% endif %}
+    </h2>
     <h3 class="post-time">From {{ page.start_time }} to {{ page.end_time }}</h3>
   </header>
 
@@ -18,31 +32,30 @@ layout: default
     <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
 
     <div class="flex-container">
-    {% for item in speaker-list %}
-      {% assign speaker = site.data.speakers[item] %}
+      {% for item in speaker-list %}
+        {% assign speaker = site.data.speakers[item] %}
 
-      <div class="speaker-info">
-        {% if speaker.photo %}
-          <div class="speaker-photo" style="background-image:url({{speaker.photo}});"></div>
-        {% endif %}
-        <span style="font-size: larger; font-weight: bold;">{{ speaker.name }}</span>
-        <br />
-        <span style="font-size: smaller;">{{ speaker.title }},<br>{{speaker.org}}</span>
-        <br>
-        {% if speaker.twitter %}
-          {% include icon-twitter.html username=speaker.twitter %}
-        {% else %}
-        {% endif %}
-      </div>
+        <div class="speaker-info">
+          {% if speaker.photo %}
+            <div class="speaker-photo" style="background-image:url({{speaker.photo}});"></div>
+          {% endif %}
+          <span style="font-size: larger; font-weight: bold;">{{ speaker.name }}</span>
+          <br/>
+          <span style="font-size: smaller;">{{ speaker.title }},<br>{{ speaker.org }}</span>
+          <br>
+          {% if speaker.twitter %}
+            {% include "icon-twitter.html" username=speaker.twitter %}
+          {% else %}
+          {% endif %}
+        </div>
 
-    {% endfor %}
+      {% endfor %}
     </div>
 
 
     <div>
       {{ content }}
     </div>
-
 
 
     <div>
@@ -58,19 +71,19 @@ layout: default
     <div>
       <h1>Location</h1>
       <p>
-        {{location.name}}<br />
-        {{location.address}}
+        {{ location.name }}<br/>
+        {{ location.address }}
       </p>
-      {{location.gmap}}
+      {{ location.gmap }}
     </div>
     <h1 id="rsvp">RSVP</h1>
 
     {% if page.eventbrite != '' %}
-    <div style="width:100%; text-align:left;">
-      {% assign eventbrite = page.eventbrite | replace: "https://eventbrite.com/tickets-external?eid=", "" | replace: "&ref=etckt", "" %}
-      <div id="eventbrite-widget-container"></div>
-      <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-      <script type="text/javascript">
+      <div style="width:100%; text-align:left;">
+        {% assign eventbrite = page.eventbrite | replace: "https://eventbrite.com/tickets-external?eid=", "" | replace: "&ref=etckt", "" %}
+        <div id="eventbrite-widget-container"></div>
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+        <script type="text/javascript">
           var orderComplete = function() {
               window.reload();
           };
@@ -83,26 +96,30 @@ layout: default
               iframeContainerHeight: 500,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
               onOrderComplete: orderComplete  // Method called when an order has successfully completed
           });
-      </script>
-    </div>
+        </script>
+      </div>
     {% else %}
 
-    <em>RSVPs open two weeks before the event so check back soon.</em>
+      <em>RSVPs open two weeks before the event so check back soon.</em>
 
     {% endif %}
 
 
-
-
     <!-- <br /> -->
-
 
 
     <!-- If there are slides, display them -->
     {% if page.slides != '' %}
       <h1 id="slides">Slides</h1>
       <div style="width:100%; text-align:left;">
-        <iframe src="https://{{ page.slides }}" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <iframe
+          src="https://{{ page.slides }}"
+          frameborder="0"
+          width="960"
+          height="569"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"></iframe>
       </div>
     {% else %}
     {% endif %}
@@ -111,7 +128,15 @@ layout: default
     {% if page.video != '' %}
       <h1 id="video">Video</h1>
       <div style="width:100%; text-align:left;">
-        <iframe src="https://{{ page.video }}" frameborder="0" width="960" height="569" allow="autoplay; encrypted-media" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <iframe
+          src="https://{{ page.video }}"
+          frameborder="0"
+          width="960"
+          height="569"
+          allow="autoplay; encrypted-media"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"></iframe>
       </div>
     {% else %}
     {% endif %}

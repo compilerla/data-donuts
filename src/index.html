@@ -21,7 +21,7 @@ layout: default
     <div class="clearfix">
 
 <!-- List Upcoming Events -->
-      <h1 class="event-time-heading fix-top">Upcoming Events</h1>
+      <h2 class="event-time-heading fix-top">Upcoming Events</h2>
 
       {% for post in site.posts reversed %}
 
@@ -38,7 +38,7 @@ layout: default
           {% else %}
             <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
           {% endif %}
-              <h2>{{ post.title }} <span>{{ post.date | date: "%A, %b %-d, %Y" }}</span></h2>
+              <h3>{{ post.title }} <span>{{ post.date | date: "%A, %b %-d, %Y" }}</span></h3>
                <div class='event-square-overlay'></div>
             </div>
 
@@ -51,7 +51,7 @@ layout: default
     <div class="clearfix">
 
 <!-- List Past Events -->
-      <h1 class="event-time-heading">Past Events</h1>
+      <h2 class="event-time-heading">Past Events</h2>
       {% for post in site.posts %}
 
         {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
@@ -60,12 +60,12 @@ layout: default
 
           <a href="{{ post.url }}">
              <div>
-              <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/
+              <h3><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/
               {% assign n = post.speakers.size %}
               {% assign n-commas = n | minus: 1 %}
               {% for counter in (0..n) %}
                 {{ post.speakers[counter] }}{% if counter < n-commas %}, {% endif %}
-              {% endfor %}</h2>
+              {% endfor %}</h3>
              </div>
           </a>
 

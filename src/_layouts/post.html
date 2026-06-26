@@ -42,11 +42,6 @@ layout: default
           <span style="font-size: larger; font-weight: bold;">{{ speaker.name }}</span>
           <br/>
           <span style="font-size: smaller;">{{ speaker.title }},<br>{{ speaker.org }}</span>
-          <br>
-          {% if speaker.twitter %}
-            {% include "icon-twitter.html" username=speaker.twitter %}
-          {% else %}
-          {% endif %}
         </div>
 
       {% endfor %}

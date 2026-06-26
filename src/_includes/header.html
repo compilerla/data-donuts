@@ -14,9 +14,9 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.navigation_title %}
-            <a class="page-link" href="{{ my_page.url }}">{{ my_page.navigation_title }}</a>
+        {% for my_page in collections.page %}
+          {% if my_page.data.navigation_title %}
+            <a class="page-link" href="{{ my_page.url }}">{{ my_page.data.navigation_title }}</a>
           {% endif %}
         {% endfor %}
       </div>

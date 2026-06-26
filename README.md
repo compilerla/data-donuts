@@ -20,7 +20,7 @@ Events will occur monthly, iteratively improving to meet the needs of the commun
 
 ## Resources
 
-Print cute name tags with the Data + Donuts logo using our [PDF template](https://github.com/compilerla/data-donuts/tree/main/src/assets/Data%20Aand%20ADonuts%20ALabels.pdf).
+Print cute name tags with the Data + Donuts logo using our [PDF template](https://github.com/compilerla/data-donuts/tree/main/src/assets/nametag-labels.pdf).
 
 Print onto Avery 42395 sticker badges, [Avery Template 5395 online](https://www.avery.com/templates/5395).
 ![Name tag preview image](https://github.com/compilerla/data-donuts/blob/main/src/assets/nametag-preview.png)

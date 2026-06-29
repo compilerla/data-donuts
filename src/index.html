@@ -22,7 +22,7 @@ layout: default
     <div class="clearfix">
 
 <!-- List Upcoming Events -->
-      <h1 class="event-time-heading fix-top">Upcoming {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
+      <h1 class="event-time-heading fix-top">Upcoming Events</h1>
 
       {% for post in site.posts reversed %}
 
@@ -31,7 +31,7 @@ layout: default
 
         {% if blogDate >= currentDate %}
 
-          <a href="{{ post.url | prepend: site.baseurl }}">
+          <a href="{{ post.url }}">
           {% if location.image %}
             <div class="event-square" style="background-image:url({{location.image}});">
           {% elsif post.cover %}
@@ -52,14 +52,14 @@ layout: default
     <div class="clearfix">
 
 <!-- List Past Events -->
-      <h1 class="event-time-heading">Past {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
+      <h1 class="event-time-heading">Past Events</h1>
       {% for post in site.posts %}
 
         {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
 
         {% if blogDate < currentDate %}
 
-          <a href="{{ post.url | prepend: site.baseurl }}">
+          <a href="{{ post.url }}">
              <div>
               <h2><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/
               {% assign n = post.speakers.size %}

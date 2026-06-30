@@ -2,8 +2,8 @@
 layout: default
 ---
 
-{% assign location = locations[page.location] %}
-{% assign speaker-list = page.speakers %}
+{% assign location = locations[location] %}
+{% assign speaker-list = speakers %}
 
 <article
   class="post"
@@ -11,20 +11,20 @@ layout: default
   itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h1 class="post-title" itemprop="name headline">{{ title }}</h1>
     <h2 class="post-date">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
-      {% if page.author %}
+      {% if author %}
         •
         <span
           itemprop="author"
           itemscope
           itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
+          <span itemprop="name">{{ author }}</span>
         </span>
       {% endif %}
     </h2>
-    <h3 class="post-time">From {{ page.start_time }} to {{ page.end_time }}</h3>
+    <h3 class="post-time">From {{ start_time }} to {{ end_time }}</h3>
   </header>
 
 
@@ -73,9 +73,9 @@ layout: default
     </div>
     <h1 id="rsvp">RSVP</h1>
 
-    {% if page.eventbrite != '' %}
+    {% if eventbrite != '' %}
       <div style="width:100%; text-align:left;">
-        {% assign eventbrite = page.eventbrite | replace: "https://eventbrite.com/tickets-external?eid=", "" | replace: "&ref=etckt", "" %}
+        {% assign eventbrite = eventbrite | replace: "https://eventbrite.com/tickets-external?eid=", "" | replace: "&ref=etckt", "" %}
         <div id="eventbrite-widget-container"></div>
         <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
         <script type="text/javascript">
@@ -100,11 +100,11 @@ layout: default
     {% endif %}
 
     <!-- If there are slides, display them -->
-    {% if page.slides != '' %}
+    {% if slides != '' %}
       <h1 id="slides">Slides</h1>
       <div style="width:100%; text-align:left;">
         <iframe
-          src="https://{{ page.slides }}"
+          src="https://{{ slides }}"
           frameborder="0"
           width="960"
           height="569"
@@ -116,11 +116,11 @@ layout: default
     {% endif %}
 
     <!-- If there is video, display -->
-    {% if page.video != '' %}
+    {% if video != '' %}
       <h1 id="video">Video</h1>
       <div style="width:100%; text-align:left;">
         <iframe
-          src="https://{{ page.video }}"
+          src="https://{{ video }}"
           frameborder="0"
           width="960"
           height="569"

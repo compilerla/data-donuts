@@ -26,7 +26,7 @@ layout: default
       {% for post in site.posts reversed %}
 
         {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
-        {% assign location = site.data.locations[post.location] %}
+        {% assign location = locations[post.location] %}
 
         {% if blogDate >= currentDate %}
 

@@ -32,10 +32,8 @@ layout: default
 
           {% if location.image %}
             <div class="event-square" style="background-image:url({{location.image}});">
-          {% elsif event.data.cover %}
-            <div class="event-square" style="background-image:url({{event.data.cover}});">
           {% else %}
-            <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
+            <div class="event-square" style="background-image:url(/images/{{ site.cover }});">
           {% endif %}
               <h3><a href="{{ event.url }}">{{ event.data.title }} <span>{{ event.date | date: "%A, %b %-d, %Y" }}</span></a></h3>
               <div class='event-square-overlay'></div>

@@ -1,5 +1,4 @@
 ---
-navigation_title: Speaker Info
 title: Info for Data + Donuts Speakers
 permalink: /speaker-info/
 ---

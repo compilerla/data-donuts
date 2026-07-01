@@ -1,5 +1,4 @@
 ---
-navigation_title: About
 title: About Data + Donuts
 permalink: /about/
 ---

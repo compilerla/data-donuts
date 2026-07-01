@@ -1,4 +1,4 @@
 export default {
   tags: "pages",
-  layout: "page.html",
+  layout: "page",
 };

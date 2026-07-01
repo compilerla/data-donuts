@@ -12,9 +12,11 @@ permalink: /about/
 
 <h2>Past Speakers</h2>
 <ul>
-{% for speaker in site.data.speakers %}
+{% for event in collections.events %}
+  {% for speaker in event.data.speakers %}
   <li>
-      <strong>{{ speaker[0] }}</strong>, {{ speaker[1].title }}, {{ speaker[1].org }}
+      <strong>{{ speaker.name }}</strong>{% if speaker.title != "" %}, {{ speaker.title }}{% endif %}{% if speaker.org != "" %}, {{ speaker.org }}{% endif %}
   </li>
+  {% endfor %}
 {% endfor %}
 </ul>

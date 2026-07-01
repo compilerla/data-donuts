@@ -56,10 +56,10 @@ layout: default
         {% if eventDate < currentDate %}
 
               <h3><a href="{{ event.url }}">{{ event.date | date: "%A, %b %-d, %Y" }} w/
-              {% assign n = event.speakers.size %}
+              {% assign n = event.data.speakers.size %}
               {% assign n-commas = n | minus: 1 %}
               {% for counter in (0..n) %}
-                {{ event.speakers[counter] }}{% if counter < n-commas %}, {% endif %}
+                {{ event.data.speakers[counter].name }}{% if counter < n-commas %}, {% endif %}
               {% endfor %}</a></h3>
 
         {% endif %}

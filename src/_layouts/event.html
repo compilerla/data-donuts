@@ -4,30 +4,15 @@ layout: default
 
 {% assign location = locations[location] %}
 
-<article
-  class="post"
-  itemscope
-  itemtype="http://schema.org/BlogPosting">
+<article class="post">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ title }}</h1>
-    <h2 class="post-date">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
-      {% if author %}
-        •
-        <span
-          itemprop="author"
-          itemscope
-          itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ author }}</span>
-        </span>
-      {% endif %}
-    </h2>
+    <h1 class="post-title">{{ title }}</h1>
+    <h2 class="post-date">{{ page.date | date: "%A, %B %-d, %Y" }}</h2>
     <h3 class="post-time">From {{ start_time }} to {{ end_time }}</h3>
   </header>
 
-
-  <div class="post-content" itemprop="articleBody">
+  <div class="post-content">
     <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
 
     <div class="flex-container">
@@ -45,14 +30,12 @@ layout: default
       {% endfor %}
     </div>
 
-
     <div>
       {{ content }}
     </div>
 
-
     <div>
-      <h1>Agenda</h1>
+      <h2>Agenda</h2>
       <ul>
         <li>8:00am - Doors Open</li>
         <li>8:30am - Networking</li>
@@ -62,14 +45,14 @@ layout: default
     </div>
 
     <div>
-      <h1>Location</h1>
+      <h2>Location</h2>
       <p>
         {{ location.name }}<br/>
         {{ location.address }}
       </p>
       {{ location.gmap }}
     </div>
-    <h1 id="rsvp">RSVP</h1>
+    <h2 id="rsvp">RSVP</h2>
 
     {% if eventbrite != '' %}
       <div style="width:100%; text-align:left;">
@@ -91,17 +74,15 @@ layout: default
         </script>
       </div>
     {% else %}
-
       <em>RSVPs open two weeks before the event so check back soon.</em>
-
     {% endif %}
 
     <!-- If there are slides, display them -->
-    {% if slides != '' %}
-      <h1 id="slides">Slides</h1>
+    {% if slides != "" %}
+      <h2 id="slides">Slides</h2>
       <div style="width:100%; text-align:left;">
         <iframe
-          src="https://{{ slides }}"
+          src="{{ slides }}"
           frameborder="0"
           width="960"
           height="569"
@@ -109,15 +90,14 @@ layout: default
           mozallowfullscreen="true"
           webkitallowfullscreen="true"></iframe>
       </div>
-    {% else %}
     {% endif %}
 
     <!-- If there is video, display -->
-    {% if video != '' %}
-      <h1 id="video">Video</h1>
+    {% if video != "" %}
+      <h2 id="video">Video</h2>
       <div style="width:100%; text-align:left;">
         <iframe
-          src="https://{{ video }}"
+          src="{{ video }}"
           frameborder="0"
           width="960"
           height="569"
@@ -126,7 +106,6 @@ layout: default
           mozallowfullscreen="true"
           webkitallowfullscreen="true"></iframe>
       </div>
-    {% else %}
     {% endif %}
   </div>
 </article>

@@ -73,7 +73,6 @@ layout: default
 
     {% if eventbrite != '' %}
       <div style="width:100%; text-align:left;">
-        {% assign eventbrite = eventbrite | replace: "https://eventbrite.com/tickets-external?eid=", "" | replace: "&ref=etckt", "" %}
         <div id="eventbrite-widget-container"></div>
         <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
         <script type="text/javascript">

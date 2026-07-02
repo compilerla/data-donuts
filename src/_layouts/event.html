@@ -78,7 +78,7 @@ layout: default
     {% endif %}
 
     <!-- If there are slides, display them -->
-    {% if slides != "" %}
+    {% if slides %}
       <h2 id="slides">Slides</h2>
       <div style="width:100%; text-align:left;">
         <iframe
@@ -93,7 +93,7 @@ layout: default
     {% endif %}
 
     <!-- If there is video, display -->
-    {% if video != "" %}
+    {% if video %}
       <h2 id="video">Video</h2>
       <div style="width:100%; text-align:left;">
         <iframe

@@ -13,8 +13,4 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("**/*.svg");
 
   eleventyConfig.addPassthroughCopy("src/assets/");
-
-  eleventyConfig.addCollection("events", (collectionsApi) => {
-    return collectionsApi.getFilteredByGlob("src/events/*.md");
-  });
 }

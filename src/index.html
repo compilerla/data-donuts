@@ -26,12 +26,12 @@ layout: default
       {% for event in collections.events reversed %}
 
         {% capture eventDate %}{{event.date | date: '%s' }}{% endcapture %}
-        {% assign location = locations[event.location] %}
+        {% assign location = locations[event.data.location] %}
 
         {% if eventDate >= currentDate %}
 
           {% if location.image %}
-            <div class="event-square" style="background-image:url({{location.image}});">
+            <div class="event-square" style="background-image:url(/images/{{location.image}});">
           {% else %}
             <div class="event-square" style="background-image:url(/images/{{ site.cover }});">
           {% endif %}

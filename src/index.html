@@ -23,26 +23,21 @@ layout: default
 <!-- List Upcoming Events -->
       <h2 class="event-time-heading fix-top">Upcoming Events</h2>
 
-      {% for post in site.posts reversed %}
+      {% for event in collections.events reversed %}
 
-        {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
-        {% assign location = site.data.locations[post.location] %}
+        {% capture eventDate %}{{event.date | date: '%s' }}{% endcapture %}
+        {% assign location = locations[event.data.location] %}
 
-        {% if blogDate >= currentDate %}
+        {% if eventDate >= currentDate %}
 
-          <a href="{{ post.url }}">
           {% if location.image %}
-            <div class="event-square" style="background-image:url({{location.image}});">
-          {% elsif post.cover %}
-            <div class="event-square" style="background-image:url({{post.cover}});">
+            <div class="event-square" style="background-image:url(/images/{{location.image}});">
           {% else %}
-            <div class="event-square" style="background-image:url(http://evento.io/img/cover.jpg);">
+            <div class="event-square" style="background-image:url(/images/{{ site.cover }});">
           {% endif %}
-              <h3>{{ post.title }} <span>{{ post.date | date: "%A, %b %-d, %Y" }}</span></h3>
-               <div class='event-square-overlay'></div>
+              <h3><a href="{{ event.url }}">{{ event.data.title }} <span>{{ event.date | date: "%A, %b %-d, %Y" }}</span></a></h3>
+              <div class='event-square-overlay'></div>
             </div>
-
-          </a>
 
         {% endif %}
 
@@ -52,22 +47,18 @@ layout: default
 
 <!-- List Past Events -->
       <h2 class="event-time-heading">Past Events</h2>
-      {% for post in site.posts %}
+      {% for event in collections.events reversed %}
 
-        {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
+        {% capture eventDate %}{{event.date | date: '%s' }}{% endcapture %}
 
-        {% if blogDate < currentDate %}
+        {% if eventDate < currentDate %}
 
-          <a href="{{ post.url }}">
-             <div>
-              <h3><span>{{ post.date | date: "%A, %b %-d, %Y" }}</span> w/
-              {% assign n = post.speakers.size %}
+              <h3><a href="{{ event.url }}">{{ event.date | date: "%A, %b %-d, %Y" }} w/
+              {% assign n = event.data.speakers.size %}
               {% assign n-commas = n | minus: 1 %}
               {% for counter in (0..n) %}
-                {{ post.speakers[counter] }}{% if counter < n-commas %}, {% endif %}
-              {% endfor %}</h3>
-             </div>
-          </a>
+                {{ event.data.speakers[counter].name }}{% if counter < n-commas %}, {% endif %}
+              {% endfor %}</a></h3>
 
         {% endif %}
 

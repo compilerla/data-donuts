@@ -5,16 +5,14 @@
   <body>
 
     {% include "header.html" %}
+    {% assign location = locations[location] %}
 
-{% if page.cover %}
-  <div class="blog-cover" style="background-image:url({{page.cover}});">
+{% if location %}
+  <div class="blog-cover location" style="background-image:url(/images/{{location.image}});"></div>
 {% else %}
-  <div class="blog-cover blog-cover-home" style="background-image:url(/images/data-donuts-cover-logo.png);">
+  <div class="blog-cover blog-cover-home" style="background-image:url(/images/{{ site.cover }});">
 {% endif %}
   </div>
-  {% if page.cover_credit %}
-    <span class="blog-cover-credit">Credit: {{page.cover_credit}}</span>
-  {% endif %}
 
     <div class="page-content">
       <div class="wrapper">

@@ -1,6 +1,4 @@
 ---
-layout: page
-navigation_title: About
 title: About Data + Donuts
 permalink: /about/
 ---
@@ -12,7 +10,7 @@ permalink: /about/
 <img src="/images/digital-summit-award.jpg">
 <caption><em>Data + Donuts organizers receiving 2018 Digital Government Summit Award</em></caption>
 
-<h1>Past Speakers</h1>
+<h2>Past Speakers</h2>
 <ul>
 {% for speaker in site.data.speakers %}
   <li>

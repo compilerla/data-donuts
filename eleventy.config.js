@@ -2,8 +2,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setLayoutsDirectory("_layouts");
 
-  eleventyConfig.addPassthroughCopy("src/styles/");
-  eleventyConfig.addWatchTarget("src/styles/");
+  eleventyConfig.addPassthroughCopy("src/css/");
+  eleventyConfig.addWatchTarget("src/css/");
 
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy("src/favicon.ico");

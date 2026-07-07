@@ -4,15 +4,15 @@ layout: default
 
 {% assign location = locations[location] %}
 
-<article class="post">
+<article class="event">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ title }}</h1>
-    <h2 class="post-date">{{ page.date | date: "%A, %B %-d, %Y" }}</h2>
-    <h3 class="post-time">From {{ start_time }} to {{ end_time }}</h3>
+  <header class="event-header">
+    <h1 class="event-title">{{ title }}</h1>
+    <h2 class="event-date">{{ page.date | date: "%A, %B %-d, %Y" }}</h2>
+    <h3 class="event-time">From {{ start_time }} to {{ end_time }}</h3>
   </header>
 
-  <div class="post-content">
+  <div class="event-content">
     <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
 
     <div class="flex-container">

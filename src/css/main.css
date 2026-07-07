@@ -320,63 +320,65 @@ blockquote > :last-child {
 }
 
 /** Page content */
+
+.page-header {
+  font-size: 20px;
+}
+
 .page-content {
   padding: 30px 0;
   position: relative;
 }
 
-.page-heading {
-  font-size: 20px;
-}
+/** Events */
 
-.post {
+.event {
   position: relative;
 }
 
-.post-list {
+.event-list {
   margin-left: 0;
   list-style: none;
 }
 
-.post-list > li {
+.event-list > li {
   margin-bottom: 30px;
 }
 
-.post-meta {
+.event-meta {
   font-size: 14px;
   color: #828282;
 }
 
-.post-link {
+.event-link {
   display: block;
   font-size: 24px;
 }
 
-.post-speakers-name {
+.event-speakers-name {
   color: grey;
 }
 
-/** Posts */
-.post-header {
+.event-header {
   margin-bottom: 30px;
 }
 
-.post-date {
+.event-date {
   margin: 10px 0 0 0;
   padding: 0;
 }
 
-.post-time {
+.event-time {
   line-height: 18px;
 }
 
-.post-time,
-.post-speakers-name {
+.event-time,
+.event-speakers-name {
   margin: 0;
   color: #a6a6a6;
 }
 
-.post-title {
+.event-title {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
@@ -387,43 +389,43 @@ blockquote > :last-child {
 }
 
 @media screen and (max-width: 800px) {
-  .post-title {
+  .event-title {
     font-size: 36px;
     width: 70%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .post-title {
+  .event-title {
     width: 50%;
   }
 }
 
-.post-content {
+.event-content {
   margin-bottom: 30px;
 }
 
-.post-content h2 {
+.event-content h2 {
   font-size: 32px;
 }
 
 @media screen and (max-width: 800px) {
-  .post-content h2 {
+  .event-content h2 {
     font-size: 28px;
   }
 }
 
-.post-content h3 {
+.event-content h3 {
   font-size: 26px;
 }
 
 @media screen and (max-width: 800px) {
-  .post-content h3 {
+  .event-content h3 {
     font-size: 22px;
   }
 }
 
-.post-content h4 {
+.event-content h4 {
   font-size: 20px;
 }
 

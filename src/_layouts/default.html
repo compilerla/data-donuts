@@ -8,9 +8,9 @@
     {% assign location = locations[location] %}
 
 {% if location %}
-  <div class="blog-cover location" style="background-image:url(/images/{{location.image}});"></div>
+  <div class="cover location" style="background-image:url(/images/{{location.image}});"></div>
 {% else %}
-  <div class="blog-cover blog-cover-home" style="background-image:url(/images/{{ site.cover }});">
+  <div class="cover cover-home" style="background-image:url(/images/{{ site.cover }});">
 {% endif %}
   </div>
 

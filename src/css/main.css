@@ -443,7 +443,7 @@ blockquote > :last-child {
   clear: both;
 }
 
-.blog-cover {
+.cover {
   height: 320px;
   background-size: cover;
   background-position: center center;
@@ -452,24 +452,24 @@ blockquote > :last-child {
 }
 
 @media screen and (max-width: 800px) {
-  .blog-cover {
+  .cover {
     height: 250px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .blog-cover {
+  .cover {
     height: 200px;
   }
 }
 
-.blog-cover-home {
+.cover-home {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #666671;
 }
 
-.blog-cover-credit {
+.cover-credit {
   color: #848484;
   font-size: 10px;
   letter-spacing: 1px;

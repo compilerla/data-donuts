@@ -2,6 +2,9 @@ name: Manually build and deploy site
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "5 6 * * 1-5" # 06:05am Monday-Friday
+      timezone: "America/Los_Angeles"
 
 jobs:
   deploy:
@@ -13,13 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: "20.x"
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.1"
-          bundler-cache: true
+          node-version-file:: ".node-version"
 
       - name: Netlify manual deploy
         run: |

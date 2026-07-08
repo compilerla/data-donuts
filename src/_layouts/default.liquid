@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-  {% include "head.html" %}
+  {% include "head" %}
 
   <body>
 
-    {% include "header.html" %}
+    {% include "header" %}
     {% assign location = locations[location] %}
 
 {% if location %}
   <div class="cover location" style="background-image:url(/images/{{location.image}});"></div>
 {% else %}
-  <div class="cover cover-home" style="background-image:url(/images/{{ site.cover }});">
+  <div class="cover cover-home" style="background-image:url(/images/{{ site.cover }});"></div>
 {% endif %}
-  </div>
 
     <div class="page-content">
       <div class="wrapper">
@@ -20,7 +19,7 @@
       </div>
     </div>
 
-    {% include "footer.html" %}
+    {% include "footer" %}
 
   </body>
 </html>

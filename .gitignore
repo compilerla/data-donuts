@@ -1,7 +1,6 @@
-.sass-cache
-.jekyll-metadata
 .idea/
 _site/
 .DS_Store
+node_modules
 qr_codes/*.png
 !qr_codes/datadonuts.la.png

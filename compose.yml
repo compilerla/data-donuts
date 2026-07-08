@@ -6,3 +6,7 @@ services:
     command: sleep infinity
     volumes:
       - .:/home/compiler/site
+      # ensure the workspace mount above does not obscure the npm deps
+      # originally laid down in the container's isolated filesystem
+      # this allows for better caching than running npm install in a lifecycle hook
+      - /home/compiler/site/node_modules

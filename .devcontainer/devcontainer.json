@@ -21,8 +21,7 @@
         "ms-python.python",
         "ms-python.black-formatter",
         "ms-python.flake8",
-        "redhat.vscode-xml",
-        "sissel.shopify-liquid",
+        "Shopify.theme-check-vscode",
         "tamasfe.even-better-toml"
       ]
     }

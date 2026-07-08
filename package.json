@@ -1,0 +1,20 @@
+{
+  "name": "data-donuts",
+  "version": "2.0.0",
+  "description": "Public sector breakfast lecture series meant to inspire.",
+  "author": "Compiler",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@shopify/prettier-plugin-liquid": "^1.10.3",
+    "prettier": "^3.9.3"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "lint:check": "npx prettier --check .",
+    "lint:fix": "npx prettier --write ."
+  }
+}

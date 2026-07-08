@@ -1,0 +1,10 @@
+export default {
+  title: "Data + Donuts LA",
+  cover: "data-donuts-cover-logo.png",
+  description: "Changing local government from the ground up.",
+  email: "data-donuts@compiler.la",
+  github: "compilerla/data-donuts",
+  timezone: "America/Los_Angeles",
+  url: "https://datadonuts.la",
+  youtube: "UC_mAa07EdkkGCn48lq0yj3Q",
+};

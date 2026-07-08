@@ -1,0 +1,113 @@
+---
+layout: default
+---
+{% assign location = locations[location] %}
+
+<article class="event">
+  <header class="event-header">
+    <h1 class="event-title">{{ title }}</h1>
+    <h2 class="event-date">{{ page.date | date: '%A, %B %-d, %Y' }}</h2>
+    <h3 class="event-time">From {{ start_time }} to {{ end_time }}</h3>
+  </header>
+
+  <div class="event-content">
+    <a class="page-link button button-primary button-in-page" href="#rsvp">RSVP</a>
+
+    <div class="flex-container">
+      {% for speaker in speakers %}
+        <div class="speaker-info">
+          {% if speaker.photo %}
+            <div class="speaker-photo" style="background-image:url(/images/{{speaker.photo}});"></div>
+          {% endif %}
+          <span style="font-size: larger; font-weight: bold;">{{ speaker.name }}</span>
+          <br>
+          <span style="font-size: smaller;">
+            {{- speaker.title }},<br>
+            {{ speaker.org -}}
+          </span>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div>
+      {{ content }}
+    </div>
+
+    <div>
+      <h2>Agenda</h2>
+      <ul>
+        <li>8:00am - Doors Open</li>
+        <li>8:30am - Networking</li>
+        <li>9:00am - Speaker Presentations</li>
+        <li>10:00am - End</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Location</h2>
+      <p>
+        {{ location.name -}}
+        <br>
+        {{ location.address }}
+      </p>
+      {{ location.gmap }}
+    </div>
+    <h2 id="rsvp">RSVP</h2>
+
+    {% if eventbrite != '' %}
+      <div style="width:100%; text-align:left;">
+        <div id="eventbrite-widget-container"></div>
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+        <script type="text/javascript">
+          var orderComplete = function () {
+            window.reload();
+          };
+          window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '{{ eventbrite }}',
+            iframeContainerId: 'eventbrite-widget-container',
+            // Optional
+            iframeContainerHeight: 500, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: orderComplete, // Method called when an order has successfully completed
+          });
+        </script>
+      </div>
+    {% else %}
+      <em>RSVPs open two weeks before the event so check back soon.</em>
+    {% endif %}
+
+    <!-- If there are slides, display them -->
+    {% if slides %}
+      <h2 id="slides">Slides</h2>
+      <div style="width:100%; text-align:left;">
+        <iframe
+          src="{{ slides }}"
+          frameborder="0"
+          width="960"
+          height="569"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        ></iframe>
+      </div>
+    {% endif %}
+
+    <!-- If there is video, display -->
+    {% if video %}
+      <h2 id="video">Video</h2>
+      <div style="width:100%; text-align:left;">
+        <iframe
+          src="{{ video }}"
+          frameborder="0"
+          width="960"
+          height="569"
+          allow="autoplay; encrypted-media"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        ></iframe>
+      </div>
+    {% endif %}
+  </div>
+</article>

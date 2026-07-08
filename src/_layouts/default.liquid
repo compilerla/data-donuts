@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -12,24 +12,25 @@
         {{ site.title | escape }}
       {% endif %}
     </title>
-    <meta name="description" content="{% if excerpt %}{{ excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta
+      name="description"
+      content="{% if excerpt %}{{ excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+    >
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="/favicon.ico">
+      href="/favicon.ico"
+    >
     <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   </head>
 
   <body>
-
     <header class="site-header">
-
       <div class="wrapper">
-
         <a class="site-title" href="/">{{ site.title }}</a>
 
         <nav class="site-nav">
@@ -46,18 +47,16 @@
             <a class="page-link" href="/speaker-info/">Speaker Info</a>
           </div>
         </nav>
-
       </div>
-
     </header>
 
     {% assign location = locations[location] %}
 
-{% if location %}
-  <div class="cover location" style="background-image:url(/images/{{location.image}});"></div>
-{% else %}
-  <div class="cover cover-home" style="background-image:url(/images/{{ site.cover }});"></div>
-{% endif %}
+    {% if location %}
+      <div class="cover location" style="background-image:url(/images/{{location.image}});"></div>
+    {% else %}
+      <div class="cover cover-home" style="background-image:url(/images/{{ site.cover }});"></div>
+    {% endif %}
 
     <div class="page-content">
       <div class="wrapper">
@@ -65,21 +64,18 @@
       </div>
     </div>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <div>
-        <img src="/images/compiler-logo-small.png" />&nbsp;&nbsp;&nbsp;<img src="/images/laci-logo-small.png" />
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div><img src="/images/compiler-logo-small.png">&nbsp;&nbsp;&nbsp;<img src="/images/laci-logo-small.png"></div>
+        <br>
+        <br>
+        <p>
+          {{ site.title }} is produced by <a href="https://compiler.la/">Compiler</a>. Find us on
+          <a href="https://github.com/{{ site.github }}">GitHub</a>
+          |
+          <a href="https://www.youtube.com/channel/{{ site.youtube }}">YouTube</a>
+        </p>
       </div>
-      <br/><br/>
-      <p>
-        {{ site.title }} is produced by
-        <a href="https://compiler.la/">Compiler</a>. Find us on
-        <a href="https://github.com/{{ site.github }}">GitHub</a>
-        |
-        <a href="https://www.youtube.com/channel/{{ site.youtube }}">YouTube</a>
-      </p>
-    </div>
-  </footer>
-
+    </footer>
   </body>
 </html>

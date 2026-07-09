@@ -482,7 +482,6 @@ blockquote > :last-child {
 }
 
 .event-square {
-  color: white;
   border: 1px solid #372121;
   position: relative;
   background-size: cover;
@@ -500,26 +499,30 @@ blockquote > :last-child {
   -webkit-tap-highlight-color: transparent;
 }
 
-.event-square h2 {
+.event-square h3 {
   position: absolute;
   bottom: 0px;
   left: 10px;
+  right: 10px;
   font-size: 20px;
-  z-index: 3;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(66, 66, 66, 0.5);
 }
 
-.event-square h2 span {
+.event-square h3 a {
+  color: white;
+}
+
+.event-square h3 span {
   font-size: 14px;
   display: block;
 }
 
 .event-square-overlay {
-  z-index: 2;
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100%;
-  width: 100%;
   line-height: 25px;
   word-wrap: break-word;
   background-color: rgba(0, 0, 0, 0);

@@ -266,6 +266,11 @@ blockquote > :last-child {
   height: 60px;
 }
 
+.site-footer a {
+  font-weight: 700;
+  color: #965cb8;
+}
+
 .contact-list,
 .social-media-list {
   list-style: none;
@@ -375,7 +380,7 @@ blockquote > :last-child {
 .event-time,
 .event-speakers-name {
   margin: 0;
-  color: #a6a6a6;
+  color: #828282;
 }
 
 .event-title {
@@ -430,7 +435,7 @@ blockquote > :last-child {
 }
 
 @media screen and (max-width: 800px) {
-  .post-content h4 {
+  .event-content h4 {
     font-size: 18px;
   }
 }

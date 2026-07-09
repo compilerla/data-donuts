@@ -46,5 +46,5 @@ Is the building ADA Accessible?
 
 - Yes. The presentation area has a podium, if a table or chair is needed for your laptop please notify us.
 
-<img src="/images/laci-speaker-venue.JPG">
+<img src="/images/laci-speaker-venue.JPG" alt="Small amphitheater in the middle of building, podium with laptop, A/V setup">
 <caption><em>Small amphitheater in the middle of building, podium with laptop, A/V setup</em></caption>

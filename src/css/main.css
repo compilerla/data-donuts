@@ -139,7 +139,6 @@ blockquote > :last-child {
 }
 
 /** Clearfix */
-.footer-col-wrapper:after,
 .wrapper:after {
   content: "";
   display: table;
@@ -266,57 +265,15 @@ blockquote > :last-child {
   height: 60px;
 }
 
+.site-footer a {
+  font-weight: 700;
+  color: #965cb8;
+}
+
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
-}
-
-.footer-col-wrapper {
-  font-size: 15px;
-  color: #828282;
-  margin-left: -15px;
-}
-
-.footer-col {
-  float: left;
-  margin-bottom: 15px;
-  padding-left: 15px;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2));
-}
-
-@media screen and (max-width: 800px) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2));
-  }
-  .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2));
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2));
-  }
 }
 
 /** Page content */
@@ -375,7 +332,7 @@ blockquote > :last-child {
 .event-time,
 .event-speakers-name {
   margin: 0;
-  color: #a6a6a6;
+  color: #828282;
 }
 
 .event-title {
@@ -430,7 +387,7 @@ blockquote > :last-child {
 }
 
 @media screen and (max-width: 800px) {
-  .post-content h4 {
+  .event-content h4 {
     font-size: 18px;
   }
 }
@@ -482,7 +439,6 @@ blockquote > :last-child {
 }
 
 .event-square {
-  color: white;
   border: 1px solid #372121;
   position: relative;
   background-size: cover;
@@ -500,26 +456,30 @@ blockquote > :last-child {
   -webkit-tap-highlight-color: transparent;
 }
 
-.event-square h2 {
+.event-square h3 {
   position: absolute;
   bottom: 0px;
   left: 10px;
+  right: 10px;
   font-size: 20px;
-  z-index: 3;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(66, 66, 66, 0.5);
 }
 
-.event-square h2 span {
+.event-square h3 a {
+  color: white;
+}
+
+.event-square h3 span {
   font-size: 14px;
   display: block;
 }
 
 .event-square-overlay {
-  z-index: 2;
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100%;
-  width: 100%;
   line-height: 25px;
   word-wrap: break-word;
   background-color: rgba(0, 0, 0, 0);

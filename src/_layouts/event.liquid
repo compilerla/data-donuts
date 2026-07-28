@@ -2,6 +2,8 @@
 layout: default
 ---
 {% assign location = locations[location] %}
+{% capture event_unix %}{{ page.date | date: '%s' }}{% endcapture %}
+{% capture now_unix %}{{ "now" | date: '%s'  }}{% endcapture %}
 
 <article class="event">
   <header class="event-header">
@@ -54,7 +56,7 @@ layout: default
     </div>
     <h2 id="rsvp">RSVP</h2>
 
-    {% if eventbrite != '' %}
+    {% if eventbrite != '' and event_unix >= now_unix %}
       <div style="width:100%; text-align:left;">
         <div id="eventbrite-widget-container"></div>
         <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
@@ -73,6 +75,8 @@ layout: default
           });
         </script>
       </div>
+    {% elsif eventbrite != '' and event_unix < now_unix %}
+      <em>This event has already passed.</em>
     {% else %}
       <em>RSVPs open two weeks before the event so check back soon.</em>
     {% endif %}

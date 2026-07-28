@@ -31,7 +31,7 @@
   <body>
     <header class="site-header">
       <div class="wrapper">
-        <a class="site-title" href="/">{{ site.title }}</a>
+        <a class="site-title" href="/"><img src="/images/data-donuts-brand.png" alt="The Data+Donuts brand logo"></a>
 
         <nav class="site-nav">
           <a href="#" class="menu-icon">
@@ -54,8 +54,6 @@
 
     {% if location %}
       <div class="cover location" style="background-image:url(/images/{{location.image}});"></div>
-    {% else %}
-      <div class="cover cover-home" style="background-image:url(/images/{{ site.cover }});"></div>
     {% endif %}
 
     <div class="page-content">

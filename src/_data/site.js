@@ -1,5 +1,5 @@
 export default {
-  title: "Data + Donuts LA",
+  title: "Data + Donuts",
   cover: "data-donuts-cover-logo.png",
   description: "Changing local government from the ground up.",
   email: "data-donuts@compiler.la",

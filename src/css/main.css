@@ -161,27 +161,28 @@ blockquote > :last-child {
 .site-header {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
+  min-height: 112px;
   position: relative;
+  padding: 1rem;
 }
 
 .site-title {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 56px;
-  letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 }
 
-.site-title,
-.site-title:visited {
-  color: #424242;
+.site-title img {
+  height: 112px;
 }
 
 .site-nav {
+  line-height: 112px;
   float: right;
-  line-height: 56px;
+}
+
+.site-title,
+.site-nav {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .site-nav .menu-icon {

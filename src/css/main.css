@@ -251,6 +251,10 @@ blockquote > :last-child {
   }
 }
 
+.home .hbspt-form {
+  margin-bottom: 1.25rem;
+}
+
 /** Site footer */
 .site-footer {
   border-top: 1px solid #e8e8e8;

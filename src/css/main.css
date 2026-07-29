@@ -199,6 +199,12 @@ blockquote > :last-child {
 }
 
 @media screen and (max-width: 600px) {
+  .site-header {
+    min-height: 56px;
+  }
+  .site-title img {
+    height: 56px;
+  }
   .site-nav {
     position: absolute;
     top: 9px;

@@ -8,7 +8,7 @@
   "private": true,
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@shopify/prettier-plugin-liquid": "^1.10.3",
+    "@shopify/prettier-plugin-liquid": "^1.11.0",
     "prettier": "^3.9.3"
   },
   "scripts": {
